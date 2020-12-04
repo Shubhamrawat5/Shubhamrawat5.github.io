@@ -13,6 +13,7 @@ h2 {
 .header {
   height: 40rem;
   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
 }
 
 .header-info {
@@ -38,7 +39,8 @@ hr {
   width: 18%;
   opacity: 0.6;
   border-color: darkslategrey;
-  margin: 3rem auto 4rem auto;
+  margin: 0 auto;
+  /* margin: 3rem auto 4rem auto; */
 }
 
 thead {
@@ -59,10 +61,20 @@ table {
   border-radius: 10px;
 }
 
-/*
-.languages, .education-section, .projects {
-  margin: 50px 0;
-}*/
+.skills-section, .education-section, .projects, .aboutme-section {
+  padding: 50px 0;
+}
+
+.skills-section, .aboutme-section {
+  background-color: rgb(249, 249, 249);
+  clip-path: polygon(0% 8%, 100% 0px, 100% 92%, 0px 100%);
+}
+
+.about-info {
+  margin: auto 100px;
+  text-align: left;
+}
+
 .header .logo {
   width: 50px;
   margin: 10px;
@@ -72,41 +84,54 @@ table {
   transform: scale(1.1);
 }
 
-.language {
-  background-color: hsl(300, 24%, 96%);
-  width: 15rem;
-  margin: 15px auto;
-  padding: 8px;
-  border-radius: 18px;
-  box-shadow: 2px 2px 5px 0px darkgrey;
+.skill {
+  display: inline-block;
+  margin: 0 35px;
 }
 
-.language span {
-  margin-right: 15px
+.skill img {
+  display: block;
 }
 
-.lang-1, .lang-5 {
-  position: relative;
-  right: 100px;
-}
-
-.lang-3 {
-  position: relative;
-  left: 100px;
+.skill h4 {
+  margin-top: 0;
+  font-size: 1.2rem;
 }
 
 .project {
   color: hsl(0, 0%, 100%);
   background-color: hsl(300deg 42% 15% / 97%);
-  width: 40rem;
   margin: 10px auto;
   border-radius: 15px;
   padding: 5px 15px;
 }
 
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: left;
+}
+
 a {
-  display: inline-block;
+  display: inline;
   text-decoration: none;
+}
+
+@media (min-width:1000px) {
+  .container {
+    display: block;
+    width: 36rem;
+    margin: auto;
+  }
+
+  a {
+    display: inline-block;
+  }
+}
+
+.project p {
+  padding: 0 15px 0 18px
 }
 
 .project-name {
