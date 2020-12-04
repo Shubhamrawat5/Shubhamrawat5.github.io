@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+img {
+  width: 220px;
+  border-radius: 50%;
+}
+
+.name {
+  color: #155371eb;
+}
+
+strong {
+  color: #155371;
+}
+
+.header {
+  height: 100vh;
+}
+
+.header-info {
+  position: relative;
+  top: 22%;
+}
