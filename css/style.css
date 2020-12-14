@@ -41,9 +41,16 @@ strong {
   color: #155371;
 }
 
-.header .logo {
+header .logo {
   width: 3rem;
   margin: 10px;
+}
+
+@media (max-width:350px)
+{
+  header .logo {
+    margin: 1px;
+  }
 }
 
 .logo:hover {
