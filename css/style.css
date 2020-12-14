@@ -10,19 +10,25 @@ h2 {
   color: hsl(300deg 43% 22%);
 }
 
-.header {
-  height: 40rem;
+header {
+  height: 100vh;
+  max-width: 95%;
   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
+  background-position: top left, bottom left;
+  display: inline-flex;
+  align-items: center;
 }
 
-.header-info {
-  position: relative;
-  top: 18%;
+.header {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header img {
-  width: 220px;
+  width: 13rem;
   border-radius: 50%;
   box-shadow: 2px 2px 8px 1px cadetblue;
 }
@@ -35,6 +41,16 @@ strong {
   color: #155371;
 }
 
+.header .logo {
+  width: 3rem;
+  margin: 10px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s;
+}
+
 hr {
   width: 18%;
   opacity: 0.6;
@@ -43,45 +59,18 @@ hr {
   /* margin: 3rem auto 4rem auto; */
 }
 
-thead {
-  color: hsl(300deg 43% 22%);
-}
-
-table, th, td {
-  margin: auto;
-  padding: 20px 10px;
-  border-width: 0px 1px 1px 0;
-  border-color: #0000002e;
-  border-style: solid;
-}
-
-table {
-  border-width: 1px 0 0 1px;
-  box-shadow: -10px -10px 20px -12px darkgrey;
-  border-radius: 10px;
-}
-
 .skills-section, .education-section, .projects, .aboutme-section {
   padding: 50px 0;
 }
 
-.skills-section, .aboutme-section {
+.skills-section {
   background-color: rgb(249, 249, 249);
-  clip-path: polygon(0% 8%, 100% 0px, 100% 92%, 0px 100%);
+  clip-path: polygon(0% 6%, 100% 0px, 100% 94%, 0px 100%);
 }
 
 .about-info {
-  margin: auto 100px;
+  margin: auto 8rem;
   text-align: left;
-}
-
-.header .logo {
-  width: 50px;
-  margin: 10px;
-}
-
-.logo:hover {
-  transform: scale(1.1);
 }
 
 .skill {
@@ -104,6 +93,7 @@ table {
   margin: 10px auto;
   border-radius: 15px;
   padding: 5px 15px;
+  max-width: 36rem;
 }
 
 .container {
@@ -113,20 +103,15 @@ table {
   text-align: left;
 }
 
-a {
-  display: inline;
-  text-decoration: none;
-}
-
-@media (min-width:1000px) {
+@media (max-width:800px) {
   .container {
     display: block;
-    width: 36rem;
+    width: 90%;
     margin: auto;
   }
 
-  a {
-    display: inline-block;
+  .about-info {
+    margin: auto 30px;
   }
 }
 
