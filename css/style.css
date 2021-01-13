@@ -3,20 +3,25 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: hsl(0, 0%, 100%);
   margin: 0;
-  font-size: 1.4rem;
 }
 
 h2 {
   color: hsl(300deg 43% 22%);
+  font-size: 28.5px;
+}
+
+.name {
+  font-size: 2.5rem;
 }
 
 header {
   height: 100vh;
-  max-width: 95%;
+  width: 95%;
   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
   background-position: top left, bottom left;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -27,8 +32,11 @@ header {
   justify-content: center;
 }
 
-.header img {
+#dp {
   width: 13rem;
+}
+
+.header img {
   border-radius: 50%;
   box-shadow: 2px 2px 8px 1px cadetblue;
 }
@@ -46,13 +54,6 @@ header .logo {
   margin: 10px;
 }
 
-@media (max-width:350px)
-{
-  header .logo {
-    margin: 1px;
-  }
-}
-
 .logo:hover {
   transform: scale(1.1);
   transition: transform 0.1s;
@@ -63,10 +64,9 @@ hr {
   opacity: 0.6;
   border-color: darkslategrey;
   margin: 0 auto;
-  /* margin: 3rem auto 4rem auto; */
 }
 
-.skills-section, .education-section, .projects, .aboutme-section {
+section {
   padding: 50px 0;
 }
 
@@ -78,6 +78,10 @@ hr {
 .about-info {
   margin: auto 8rem;
   text-align: left;
+}
+
+.aboutme-section {
+  font-size: 25px;
 }
 
 .skill {
@@ -140,5 +144,98 @@ hr {
 }
 
 .project-info {
+  font-size: 15px;
+}
+
+.work-done {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+}
+
+.work-box {
+  height: 16rem;
+  width: 27rem;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0.8rem;
+  box-shadow: 2px 9px 3px -8px cadetblue;
+}
+
+.work-done img {
+  width: 100%;
+  height: 82%;
+  transition: 0.2s;
+}
+
+.work-done img:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.work-done h3 {
+  margin: 0;
+  color: #652d2d;
+  font-size: 22px;
+}
+
+@media (max-width:600px) {
+  #dp {
+    width: 10rem;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+
+  .aboutme-section {
+    font-size: 19px;
+  }
+
+  .social-profiles img {
+    width: 2.44rem;
+  }
+
+  .skill {
+    margin: 0 25px;
+  }
+
+  .skill h4 {
+    font-size: 1rem;
+  }
+
+  .skill img {
+    width: 70px;
+  }
+
+  .work-box {
+    height: 15rem;
+    width: 23rem;
+  }
+
+  .work-done h3 {
+    margin: -3px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #ffffff;
+  height: 2rem;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #4e0e0eed;
+}
+
+footer p {
+  font-weight: bold;
   font-size: 15px;
 }
