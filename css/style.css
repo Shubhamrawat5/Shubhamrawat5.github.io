@@ -1,6 +1,10 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: hsl(0, 0%, 100%);
   margin: 0;
 }
@@ -14,29 +18,67 @@ h2 {
   font-size: 2.5rem;
 }
 
-header {
-  height: 100vh;
-  width: 95%;
-  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-  background-repeat: no-repeat;
-  background-position: top left, bottom left;
+nav {
   display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 45px;
+  font-size: 18px;
+  background: #f2f2f1;
+  box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+  position: fixed;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+li {
+  display: inline;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+li:hover {
+  color: darkgreen;
+}
+
+.theme-mode-container {
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  background: #ffffff;
+  display: inline-flex;
+  border: 1px solid greenyellow;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
 }
+.theme-mode-img {
+  width: 18px;
+}
 
-.header {
+header {
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom left;
+}
+
+#header {
+  height: 100vh;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 #dp {
   width: 13rem;
 }
 
-.header img {
+#header img {
   border-radius: 50%;
   box-shadow: 2px 2px 8px 1px cadetblue;
 }
@@ -70,9 +112,9 @@ section {
   padding: 50px 0;
 }
 
-.skills-section {
+#skills {
   background-color: rgb(249, 249, 249);
-  clip-path: polygon(0% 6%, 100% 0px, 100% 94%, 0px 100%);
+  /* clip-path: polygon(0% 6%, 100% 0px, 100% 94%, 0px 100%); */
 }
 
 .about-info {
@@ -80,7 +122,7 @@ section {
   text-align: left;
 }
 
-.aboutme-section {
+#aboutme {
   font-size: 25px;
 }
 
@@ -114,7 +156,7 @@ section {
   text-align: left;
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .container {
     display: block;
     width: 90%;
@@ -127,7 +169,7 @@ section {
 }
 
 .project p {
-  padding: 0 15px 0 18px
+  padding: 0 15px 0 18px;
 }
 
 .project-name {
@@ -182,7 +224,7 @@ section {
   font-size: 22px;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   #dp {
     width: 10rem;
   }
@@ -191,7 +233,7 @@ section {
     font-size: 32px;
   }
 
-  .aboutme-section {
+  #aboutme {
     font-size: 19px;
   }
 
@@ -223,6 +265,7 @@ section {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 footer {
