@@ -268,18 +268,18 @@
     <section id="contact">
       <h2 class="section-heading">Contact me</h2>
       <div class="contact-container">
-        <form action="">
+        <form>
           <div>
             <label for="">Name</label>
-            <input type="text" name="" id="form-name" />
+            <input type="text" name="" id="form-name" required />
           </div>
           <div>
             <label for="">Email</label>
-            <input type="email" name="" id="form-email" />
+            <input type="email" name="" id="form-email" required />
           </div>
           <div>
             <label for="">Message</label>
-            <textarea id="form-message"> </textarea>
+            <textarea id="form-message" required></textarea>
           </div>
           <button type="submit" id="send-btn">Send</button>
         </form>
@@ -330,5 +330,14 @@
       <p>MADE WITH ❤️ BY SHUBHAM</p>
     </footer>
     <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_3WNdj8XTKrCjy5PNgNtJm");
+      })();
+    </script>
   </body>
 </html>

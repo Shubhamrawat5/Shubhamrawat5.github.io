@@ -123,7 +123,7 @@ strong {
   margin: 10px;
 }
 
-.logo:hover {
+.social-logo:hover {
   transform: scale(1.1);
   transition: transform 0.1s;
 }
