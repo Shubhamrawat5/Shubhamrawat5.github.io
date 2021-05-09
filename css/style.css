@@ -24,16 +24,19 @@ body {
   --color-text-secondary: rgb(218 218 232);
 }
 
-h2 {
-  color: var(--color-text-secondary);
-  font-size: 28.5px;
+header {
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom left;
 }
 
-.name {
-  font-size: 2.5rem;
-  color: var(--color-text-secondary);
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
+/*============= NAV BAR ===============*/
 nav {
   display: inline-flex;
   align-items: center;
@@ -83,18 +86,13 @@ li:hover {
   justify-content: center;
   align-items: center;
 }
+
 .theme-mode-img {
   width: 18px;
 }
 
-header {
-  background-image: url(../images/bg-pattern-top.svg),
-    url(../images/bg-pattern-bottom.svg);
-  background-repeat: no-repeat;
-  background-position: top left, bottom left;
-}
-
-#header {
+/*============== HEADER ===============*/
+#head-section {
   height: 100vh;
   display: inline-flex;
   flex-direction: column;
@@ -103,11 +101,13 @@ header {
   width: 100%;
 }
 
-#dp {
-  width: 13rem;
+.name {
+  font-size: 2.5rem;
+  color: var(--color-text-secondary);
 }
 
-#header img {
+#dp {
+  width: 13rem;
   border-radius: 50%;
   box-shadow: 1px 1px 4px 0px var(--color-secondary);
 }
@@ -116,7 +116,7 @@ strong {
   font-size: 2.7rem;
 }
 
-header .logo {
+.social-logo {
   width: 3rem;
   margin: 10px;
 }
@@ -126,6 +126,7 @@ header .logo {
   transition: transform 0.1s;
 }
 
+/*============== horizontal line =========*/
 hr {
   width: 18%;
   opacity: 0.6;
@@ -133,13 +134,20 @@ hr {
   margin: 0 auto;
 }
 
+/*============= SECTION ==============*/
 section {
   padding: 50px 0;
 }
 
-#skills {
-  background-color: var(--color-primary);
-  /* clip-path: polygon(0% 6%, 100% 0px, 100% 94%, 0px 100%); */
+.section-heading {
+  color: var(--color-text-secondary);
+  font-size: 28.5px;
+}
+
+/*========= ABOUT SECTION ===========*/
+#aboutme {
+  font-size: 25px;
+  background-color: var(--color-secondary);
 }
 
 .about-info {
@@ -147,11 +155,11 @@ section {
   text-align: left;
 }
 
-#aboutme {
-  font-size: 25px;
-  background-color: var(--color-secondary);
+/*========= SKILLS SECTION ===========*/
+#skills {
+  background-color: var(--color-primary);
+  /* clip-path: polygon(0% 6%, 100% 0px, 100% 94%, 0px 100%); */
 }
-
 .skill {
   display: inline-block;
   margin: 0 35px;
@@ -166,55 +174,14 @@ section {
   font-size: 1.2rem;
 }
 
-.project {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(300deg 42% 15% / 97%);
-  margin: 10px auto;
-  border-radius: 15px;
-  padding: 5px 15px;
-  max-width: 36rem;
-}
-
-.container {
-  display: inline-flex;
-  flex-direction: column;
-  width: 90%;
-  text-align: left;
-}
-
+/*======= MEDIA QUERY:800px ========*/
 @media (max-width: 800px) {
-  .container {
-    display: block;
-    width: 90%;
-    margin: auto;
-  }
-
   .about-info {
     margin: auto 30px;
   }
 }
 
-.project p {
-  padding: 0 15px 0 18px;
-}
-
-.project-name {
-  text-decoration: underline;
-  margin: 20px;
-}
-
-.project-used {
-  font-size: 15px;
-}
-
-.project:hover {
-  transform: scale(1.01);
-}
-
-.project-info {
-  font-size: 15px;
-}
-
+/*========= WORK DONE ===========*/
 #workdone {
   background-color: var(--color-secondary);
 }
@@ -253,6 +220,7 @@ section {
   font-size: 22px;
 }
 
+/*========= MEDIA QUERY:600px =============*/
 @media (max-width: 600px) {
   .navbar-headings {
     display: none;
@@ -297,11 +265,7 @@ section {
   }
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
+/*========== FOOTER =============*/
 footer {
   background-color: #ffffff;
   height: 2rem;
