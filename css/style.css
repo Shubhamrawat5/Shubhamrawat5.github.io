@@ -240,6 +240,7 @@ section {
   color: var(--color-text-primary);
   padding: 30px 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 .contact-container {
   display: inline-flex;
