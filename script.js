@@ -1,9 +1,13 @@
 /* -------------------------------- DARK-MODE ------------------------------- */
 let themeMode = document.querySelector(".theme-mode-container");
+let logo = document.querySelector("#logo");
+let body = document.querySelector("body");
 themeMode.addEventListener("click", changeTheme);
 
 function changeTheme() {
-  document.querySelector("body").classList.toggle("dark");
+  body.classList.toggle("dark");
+  logo.classList.toggle("invert");
+
   let currentThemeMode = document.querySelector(".theme-mode-img");
 
   if (currentThemeMode.getAttribute("src") === "images/moon.svg")
@@ -41,3 +45,22 @@ function submitForm(e) {
     }
   });
 }
+
+const nameCharacterElements = document.querySelectorAll(".name-char");
+function animateName() {
+  let t = 0;
+  nameCharacterElements.forEach((charElement) => {
+    t += 75;
+    setTimeout(() => {
+      charElement.classList.add("name-color");
+      setTimeout(() => {
+        charElement.classList.remove("name-color");
+      }, 100);
+    }, t);
+  });
+}
+
+animateName();
+setInterval(() => {
+  animateName();
+}, 1400);

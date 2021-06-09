@@ -1,5 +1,8 @@
-* {
+html {
   scroll-behavior: smooth;
+  scroll-padding-top: 22px;
+}
+* {
   box-sizing: border-box;
 }
 
@@ -19,17 +22,10 @@ body {
 }
 
 .dark {
-  --color-primary: rgb(25, 25, 25);
+  --color-primary: rgb(33 31 31);
   --color-secondary: rgb(35, 35, 35);
   --color-text-primary: #dee4ea;
   --color-text-secondary: rgb(218 218 232);
-}
-
-header {
-  background-image: url(../images/bg-pattern-top.svg),
-    url(../images/bg-pattern-bottom.svg);
-  background-repeat: no-repeat;
-  background-position: top left, bottom left;
 }
 
 a {
@@ -57,12 +53,15 @@ nav {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: darken;
   position: absolute;
   left: 10px;
 }
 
-.sr-logo img {
+.invert {
+  filter: invert(1);
+}
+
+#logo {
   width: 45px;
 }
 
@@ -101,26 +100,54 @@ li:hover {
   justify-content: center;
   width: 100%;
   padding: 0 20px;
+  /* background-image: url("../images/cool-background\ \(1\).png"); */
+  background-image: url("../images/bg2.jpg");
 }
 
 .name {
   font-size: 40px;
-  color: var(--color-text-secondary);
+  color: #f2f2f1;
+  text-shadow: 2px 3px black;
 }
-
+.name-im div {
+  display: inline-block;
+  font-size: 0;
+}
+.name-im {
+  font-family: "Rock Salt", cursive;
+  display: block;
+}
+.name-char {
+  font-size: 34px;
+  letter-spacing: 2px;
+}
+.name-color {
+  color: #d0daa0;
+}
+.name-color {
+  color: #cbf015;
+}
 #dp {
-  width: 208px;
+  width: 212px;
+  height: 200px;
   border-radius: 50%;
-  box-shadow: 1px 1px 4px 0px var(--color-secondary);
+  /* box-shadow: 2px 4px 5px 4px rgb(35 35 35); BLACK */
+  box-shadow: 1px 2px 3px 1px rgb(255 255 255);
 }
 
 strong {
   font-size: 43px;
 }
 
+header .social-profiles {
+  position: absolute;
+  bottom: 5px;
+}
+
 .social-logo {
-  width: 48px;
-  margin: 10px;
+  width: 45px;
+  height: 45px;
+  margin: 8px;
 }
 
 .social-logo:hover {
@@ -151,18 +178,51 @@ section {
 #aboutme {
   font-size: 25px;
   background-color: var(--color-secondary);
+  position: relative;
+  background-size: cover;
 }
 
 .about-info {
-  padding: 0px 40px;
-  max-width: 60rem;
+  background: black;
+  max-width: 70rem;
   margin: auto;
   text-align: left;
+  font-size: 17px;
+  font-family: monospace;
 }
-
+.about-me-header {
+  background-color: #040428;
+  padding: 9px 15px 7px 15px;
+}
+.about-me-header div {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #c3c31a;
+  display: inline-block;
+}
+.about-me-header div:nth-child(1) {
+  background-color: red;
+}
+.about-me-header div:nth-child(2) {
+  background-color: green;
+}
+.about-me {
+  padding: 20px;
+  padding-top: 10px;
+}
 .about-info p {
-  text-align: justify;
-  margin: 10px 0;
+  margin: 0;
+  color: #dee4ea;
+}
+.l2 {
+  margin-left: 20px !important;
+}
+.l3 {
+  margin-left: 40px !important;
+}
+.l4 {
+  margin-left: 60px !important;
 }
 
 /*========= SKILLS SECTION ===========*/
@@ -291,6 +351,7 @@ footer .social-profiles {
 }
 footer .social-logo {
   width: 30px;
+  height: 30px;
   margin: 5px;
 }
 footer p {
@@ -305,18 +366,18 @@ footer p {
   .name {
     font-size: 33px;
   }
-  .name strong {
-    font-size: 35px;
+  .name-char {
+    font-size: 30px;
   }
   #aboutme {
     font-size: 20px;
   }
   .about-info {
+    font-size: 15px;
   }
   .social-logo {
     width: 42px;
-  }
-  .skill-container {
+    height: 42px;
   }
   .sk-par-con {
     grid-template-columns: repeat(auto-fit, 85px);
@@ -346,17 +407,37 @@ footer p {
   }
 }
 
+@media (max-width: 1160px) {
+  .about-info {
+    margin: 0 15px;
+  }
+}
+
 /*========= MEDIA QUERY:600px =============*/
 @media (max-width: 600px) {
   .navbar-headings {
     display: none;
   }
   #dp {
-    width: 160px;
+    width: 170px;
+    height: 160px;
   }
-
+  .name-char {
+    font-size: 27px;
+  }
+  .im {
+    display: block;
+    height: 50px;
+  }
   #aboutme {
     font-size: 19px;
+  }
+  .about-info {
+    font-size: 12px;
+  }
+  .about-me-header div {
+    width: 10px;
+    height: 10px;
   }
   .sk-par-con {
     grid-template-columns: repeat(auto-fit, 60px);
