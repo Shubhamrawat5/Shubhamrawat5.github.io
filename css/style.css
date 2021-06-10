@@ -172,6 +172,8 @@ section {
   color: var(--color-text-secondary);
   font-size: 28.5px;
   margin-top: 5px;
+  display: inline-block;
+  border-bottom: 2px solid var(--color-text-secondary);
 }
 
 /*========= ABOUT SECTION ===========*/
@@ -270,21 +272,24 @@ section {
 }
 
 .work-box {
-  height: 16rem;
   width: 27rem;
   border-radius: 8px;
   overflow: hidden;
   margin: 0.8rem;
-  box-shadow: 2px 9px 3px -8px cadetblue;
+  border: 2px solid var(--color-text-secondary);
+  box-shadow: 1px 1px 3px 0px var(--color-text-primary);
+  text-align: left;
+  padding-bottom: 2px;
+  position: relative;
 }
 
-.work-done img {
+.work-img {
   width: 100%;
-  height: 84%;
+  height: 220px;
   transition: 0.2s;
 }
 
-.work-done img:hover {
+.work-img:hover {
   transform: scale(1.03);
   transition: 0.2s;
   cursor: pointer;
@@ -293,6 +298,48 @@ section {
 .work-done h3 {
   margin: 0;
   font-size: 20px;
+  background: var(--color-text-secondary);
+  display: inline;
+  padding: 0 5px;
+  /* text-shadow: 1px 1px 1px var(--color-primary); */
+  color: var(--color-primary);
+  border-radius: 0 5px 5px 0;
+}
+.work-info {
+  margin: 4px 0;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.work-used {
+  display: inline-flex;
+  margin-left: 10px;
+}
+.work-used img {
+  width: 36px;
+  height: 36px;
+  margin-right: 4px;
+}
+.work-github {
+  position: absolute;
+  top: 0px;
+  right: -70px;
+  background: #4278c4;
+  transform: rotateZ(45deg);
+  width: 190px;
+  padding: 4px;
+  height: 48px;
+  text-align: center;
+}
+.work-github img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  transform: rotate(0deg);
+}
+.work-github img:hover {
+  transition: 2s;
+  transform: rotate(360deg);
 }
 
 /* --------------------------------- CONTACT -------------------------------- */
@@ -444,6 +491,9 @@ footer p {
   .navbar-headings {
     display: none;
   }
+  nav {
+    padding: 0 10px;
+  }
   #dp {
     width: 170px;
     height: 160px;
@@ -481,7 +531,9 @@ footer p {
     height: unset;
     width: unset;
   }
-
+  .work-img {
+    height: calc(20vw + 6rem);
+  }
   .work-done h3 {
     font-size: 19px;
   }

@@ -50,12 +50,12 @@ const nameCharacterElements = document.querySelectorAll(".name-char");
 function animateName() {
   let t = 0;
   nameCharacterElements.forEach((charElement) => {
-    t += 75;
+    t += 115;
     setTimeout(() => {
       charElement.classList.add("name-color");
       setTimeout(() => {
         charElement.classList.remove("name-color");
-      }, 100);
+      }, 140);
     }, t);
   });
 }
@@ -63,4 +63,4 @@ function animateName() {
 animateName();
 setInterval(() => {
   animateName();
-}, 1400);
+}, 1800);
