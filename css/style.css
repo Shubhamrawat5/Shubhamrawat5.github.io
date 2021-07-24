@@ -11,6 +11,7 @@ html {
   --color-secondary: #f2f2f1;
   --color-text-primary: #1a0202;
   --color-text-secondary: #155371eb;
+  --theme-invert: none;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
   --color-secondary: rgb(35, 35, 35);
   --color-text-primary: #dee4ea;
   --color-text-secondary: rgb(218 218 232);
+  --theme-invert: invert();
 }
 
 a {
@@ -79,16 +81,34 @@ li:hover {
   height: 35px;
   width: 35px;
   cursor: pointer;
-  background: #ffffff;
+  background: var(--color-secondary);
   display: inline-flex;
-  border: 1px solid greenyellow;
+  border: 1.5px solid var(--color-text-primary);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .theme-mode-img {
-  width: 18px;
+  filter: var(--theme-invert);
+  width: 15px;
+}
+
+.theme-animate {
+  animation: th;
+  animation-duration: 0.5s;
+}
+
+@keyframes th {
+  0% {
+    /* transform: scale(1); */
+    transform: translateY(-20px);
+  }
+  100% {
+    /* transform: scale(0); */
+    transform: translateY(1px);
+  }
 }
 
 /*============== HEADER ===============*/
@@ -102,6 +122,7 @@ li:hover {
   padding: 0 20px;
   /* background-image: url("../images/cool-background\ \(1\).png"); */
   background-image: url("../images/bg2.jpg");
+  overflow: hidden;
 }
 
 .name {
@@ -132,7 +153,7 @@ li:hover {
   height: 200px;
   border-radius: 50%;
   /* box-shadow: 2px 4px 5px 4px rgb(35 35 35); BLACK */
-  box-shadow: 1px 2px 3px 1px rgb(255 255 255);
+  box-shadow: 0px 0px 4px 1px rgb(255 255 255);
 }
 
 strong {
@@ -153,6 +174,32 @@ header .social-profiles {
 .social-logo:hover {
   transform: scale(1.1);
   transition: transform 0.1s;
+}
+
+.left-slogo {
+  animation: leftroll;
+  animation-duration: 1.5s;
+}
+@keyframes leftroll {
+  0% {
+    transform: translateX(-50px) rotate(540deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.right-slogo {
+  animation: rightroll;
+  animation-duration: 2s;
+}
+@keyframes rightroll {
+  0% {
+    transform: translateX(50px) rotate(-540deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 /*============== horizontal line =========*/
