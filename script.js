@@ -10,14 +10,14 @@ function changeTheme() {
 
   let currentThemeMode = document.querySelector(".theme-mode-img");
 
+  if (currentThemeMode.getAttribute("src") === "images/moon.svg")
+    currentThemeMode.setAttribute("src", "images/light.svg");
+  else currentThemeMode.setAttribute("src", "images/moon.svg");
+
   currentThemeMode.classList.remove("theme-animate");
   setTimeout(() => {
     currentThemeMode.classList.add("theme-animate");
   });
-
-  if (currentThemeMode.getAttribute("src") === "images/moon.svg")
-    currentThemeMode.setAttribute("src", "images/light.svg");
-  else currentThemeMode.setAttribute("src", "images/moon.svg");
 }
 
 /* ---------------------------------- EMAIL --------------------------------- */

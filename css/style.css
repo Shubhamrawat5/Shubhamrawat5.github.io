@@ -176,29 +176,21 @@ header .social-profiles {
   transition: transform 0.1s;
 }
 
-.left-slogo {
-  animation: leftroll;
-  animation-duration: 1.5s;
-}
-@keyframes leftroll {
-  0% {
-    transform: translateX(-50px) rotate(540deg);
-  }
-  100% {
-    transform: none;
-  }
+.left-slogo,
+.right-slogo {
+  animation: popin;
+  animation-duration: 1.2s;
 }
 
-.right-slogo {
-  animation: rightroll;
-  animation-duration: 2s;
-}
-@keyframes rightroll {
+@keyframes popin {
   0% {
-    transform: translateX(50px) rotate(-540deg);
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.02);
   }
   100% {
-    transform: none;
+    transform: scale(1);
   }
 }
 
