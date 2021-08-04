@@ -322,13 +322,43 @@ section {
   position: relative;
 }
 
+.work-box:hover {
+  border: 2px solid #4278c4;
+  box-shadow: 0px 0px 0px 0px yellow;
+}
+.work-box:hover:after {
+  content: "";
+  height: 4px;
+  width: 0px;
+  background-color: white;
+  background-color: #4278c4;
+  position: absolute;
+  animation: bottom-animate;
+  /* animation-iteration-count: infinite; */
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes bottom-animate {
+  0% {
+    top: 99%;
+    left: 49%;
+    width: 0px;
+  }
+  100% {
+    top: 99%;
+    left: 0%;
+    width: 110%;
+  }
+}
+
 .work-img {
   width: 100%;
   height: 220px;
   transition: 0.2s;
 }
 
-.work-img:hover {
+.work-box:hover .work-img {
   transform: scale(1.03);
   transition: 0.2s;
   cursor: pointer;
