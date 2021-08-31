@@ -226,6 +226,7 @@ section {
 
 .about-info {
   background: black;
+  width: 90%;
   max-width: 70rem;
   margin: auto;
   text-align: left;
@@ -514,6 +515,8 @@ footer p {
   }
   .about-info {
     font-size: 15px;
+    margin: 0 15px;
+    width: unset;
   }
   .social-logo {
     width: 42px;
@@ -551,9 +554,6 @@ footer p {
 }
 
 @media (max-width: 1160px) {
-  .about-info {
-    margin: 0 15px;
-  }
 }
 
 /*========= MEDIA QUERY:600px =============*/
