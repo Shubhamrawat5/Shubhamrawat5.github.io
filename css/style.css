@@ -66,6 +66,7 @@ nav {
 
 #logo {
   width: 45px;
+  height: 45px;
 }
 
 li {
@@ -94,6 +95,7 @@ li:hover {
 .theme-mode-img {
   filter: var(--theme-invert);
   width: 15px;
+  height: 15px;
 }
 
 .theme-animate {
