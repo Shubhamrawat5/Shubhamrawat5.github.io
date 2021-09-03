@@ -203,6 +203,7 @@ function Workdone() {
               <img src={htmlImg} alt="" />
               <img src={cssImg} alt="" />
               <img src={jsImg} alt="" />
+              <img src={reactjsImg} alt="" />
             </div>
             <a
               target="_blank"

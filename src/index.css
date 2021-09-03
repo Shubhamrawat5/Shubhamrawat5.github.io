@@ -17,8 +17,11 @@ html {
 body {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  background-color: var(--color-primary);
   margin: 0;
+}
+
+#root > div {
+  background-color: var(--color-primary);
   color: var(--color-text-primary);
 }
 
@@ -98,8 +101,8 @@ li:hover {
 
 .theme-mode-img {
   filter: var(--theme-invert);
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 
 .theme-animate {
@@ -423,7 +426,6 @@ section {
   background-color: var(--color-primary);
   color: var(--color-text-primary);
   padding: 30px 20px;
-  margin-bottom: 20px;
   position: relative;
 }
 .contact-container {
@@ -538,9 +540,7 @@ footer p {
     width: 60px;
     height: 60px;
   }
-  #contact {
-    margin-bottom: 10px;
-  }
+
   .contact-container {
     flex-direction: column;
   }
