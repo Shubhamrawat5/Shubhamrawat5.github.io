@@ -1,22 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Header from "./components/Header";
+import Aboutme from "./components/Aboutme";
+import Skills from "./components/Skills";
+import Workdone from "./components/Workdone";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello World</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Aboutme />
+      <Skills />
+      <Workdone />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

@@ -124,7 +124,7 @@ li:hover {
   width: 100%;
   padding: 0 20px;
   /* background-image: url("../images/cool-background\ \(1\).png"); */
-  background-image: url("../images/bg2.jpg");
+  background-image: url("./asserts/images/bg2.jpg");
   overflow: hidden;
 }
 
@@ -136,6 +136,7 @@ li:hover {
 .name-im div {
   display: inline-block;
   font-size: 0;
+  margin: 0px 8px;
 }
 .name-im {
   font-family: "Rock Salt", cursive;
@@ -488,6 +489,7 @@ footer {
   background-color: var(--color-secondary);
   width: 100%;
   color: var(--color-text-secondary);
+  padding: 24px 0 14px 0;
 }
 footer .social-profiles {
   margin-top: -10px;
@@ -501,7 +503,6 @@ footer p {
   font-weight: bold;
   font-size: 15px;
   margin: 0;
-  padding-bottom: 15px;
 }
 
 /*======= MEDIA QUERY:800px ========*/
@@ -594,8 +595,7 @@ footer p {
   .skill-container h4 {
     padding-left: 25px;
   }
-  .skill-container img {
-  }
+
   .work-done {
     width: 95%;
   }
