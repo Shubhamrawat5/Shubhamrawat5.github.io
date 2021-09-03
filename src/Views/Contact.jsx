@@ -1,11 +1,48 @@
+import { useState } from "react";
+import emailjs from "emailjs-com";
+
 function Contact() {
+  const [sendBtnMsg, setSendBtnMsg] = useState("Send");
+
+  function submitForm(e) {
+    setSendBtnMsg("Sending");
+    e.preventDefault();
+    const form_name = e.target[0].value;
+    const form_email = e.target[1].value;
+    const form_message = e.target[2].value;
+
+    let obj = {
+      form_name,
+      form_email,
+      form_message,
+    };
+
+    // console.log(obj);
+    emailjs
+      .send(
+        "service_0i7zsh5",
+        "template_y8g6gr8",
+        obj,
+        "user_3WNdj8XTKrCjy5PNgNtJm"
+      )
+      .then((res) => {
+        if (res.status === 200) {
+          console.log("message sent!");
+          setSendBtnMsg("Sent !");
+        } else {
+          console.log("error in sending message");
+          setSendBtnMsg("Error !");
+        }
+      });
+  }
+
   return (
     <section id="contact">
       <div>
         <h2 className="section-heading">&#60; Contact me / &#62;</h2>
       </div>
       <div className="contact-container">
-        <form data-aos="zoom-in">
+        <form data-aos="zoom-in" onSubmit={submitForm}>
           <div>
             <label htmlFor="name">NAME</label>
             <input
@@ -35,7 +72,7 @@ function Contact() {
             ></textarea>
           </div>
           <button type="submit" id="send-btn">
-            Send
+            {sendBtnMsg}
           </button>
         </form>
         <iframe

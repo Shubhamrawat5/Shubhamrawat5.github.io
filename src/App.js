@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Aboutme from "./components/Aboutme";
 import Skills from "./components/Skills";
 import Workdone from "./components/Workdone";
-import Contact from "./components/Contact";
+import Contact from "./Views/Contact";
 import Footer from "./components/Footer";
 
 function App() {
