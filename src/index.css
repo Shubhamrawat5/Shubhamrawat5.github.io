@@ -45,8 +45,11 @@ nav {
   height: 45px;
   font-size: 18px;
   background: var(--color-secondary);
+  color: var(--color-text-primary);
   box-shadow: rgb(0 0 0 / 12%) 0px 5px 10px;
   position: fixed;
+  left: 0;
+  top: 0;
   z-index: 1;
   box-sizing: border-box;
   padding: 0 20px;
@@ -67,6 +70,7 @@ nav {
 #logo {
   width: 45px;
   height: 45px;
+  opacity: 0.95;
 }
 
 li {
@@ -94,8 +98,8 @@ li:hover {
 
 .theme-mode-img {
   filter: var(--theme-invert);
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
 }
 
 .theme-animate {
@@ -105,11 +109,9 @@ li:hover {
 
 @keyframes th {
   0% {
-    /* transform: scale(1); */
     transform: translateY(-20px);
   }
   100% {
-    /* transform: scale(0); */
     transform: translateY(1px);
   }
 }
