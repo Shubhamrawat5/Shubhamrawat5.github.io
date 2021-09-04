@@ -4,7 +4,6 @@ import logo from "../asserts/images/sr-logo.png";
 
 function Nav({ theme, setTheme }) {
   function changeThemeHandler() {
-    //TODO: REMOVE DOM MANIPULATION
     let logo = document.querySelector("#logo");
     logo.classList.toggle("invert");
     let currentThemeMode = document.querySelector(".theme-mode-img");
@@ -44,7 +43,7 @@ function Nav({ theme, setTheme }) {
         onClick={() => changeThemeHandler()}
       >
         <img
-          className="theme-mode-img"
+          className={"theme-mode-img"}
           src={theme === "dark" ? moonImg : lightImg}
           alt="mode"
         />

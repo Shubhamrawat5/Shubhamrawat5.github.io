@@ -51,11 +51,11 @@ function Skills() {
             <p className="skill-name">Java Script</p>
           </div>
           <div>
-            <img src={nodejsImg} alt="nodejs" style={{ marginLeft: "6px" }} />
+            <img src={nodejsImg} alt="nodejs" />
             <p className="skill-name">Node js</p>
           </div>
           <div>
-            <img src={reactjsImg} alt="reactjs" style={{ marginLeft: "6px" }} />
+            <img src={reactjsImg} alt="reactjs" />
             <p className="skill-name">React js</p>
           </div>
         </div>
