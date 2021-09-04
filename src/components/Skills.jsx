@@ -22,26 +22,62 @@ function Skills() {
       <div className="skill-container">
         <div className="skill-language sk-par-con" data-aos="fade">
           <h4>Language :</h4>
-          <img src={cppImg} alt="c++" />
-          <img src={cImg} alt="c" />
-          <img src={pythonImg} alt="python" />
+          <div>
+            <img src={cppImg} alt="c++" />
+            <p className="skill-name">C++</p>
+          </div>
+          <div>
+            <img src={cImg} alt="c" />
+            <p className="skill-name">C Lang</p>
+          </div>
+          <div>
+            <img src={pythonImg} alt="python" />
+            <p className="skill-name">Python</p>
+          </div>
         </div>
 
         <div className="skill-web sk-par-con" data-aos="fade">
           <h4>Web :</h4>
-          <img src={htmlImg} alt="html" />
-          <img src={cssImg} alt="css" />
-          <img src={jsImg} alt="js" />
-          <img src={nodejsImg} alt="nodejs" />
-          <img src={reactjsImg} alt="reactjs" />
+          <div>
+            <img src={htmlImg} alt="html" />
+            <p className="skill-name">Html5</p>
+          </div>
+          <div>
+            <img src={cssImg} alt="css" />
+            <p className="skill-name">Css3</p>
+          </div>
+          <div>
+            <img src={jsImg} alt="js" />
+            <p className="skill-name">Java Script</p>
+          </div>
+          <div>
+            <img src={nodejsImg} alt="nodejs" style={{ marginLeft: "6px" }} />
+            <p className="skill-name">Node js</p>
+          </div>
+          <div>
+            <img src={reactjsImg} alt="reactjs" style={{ marginLeft: "6px" }} />
+            <p className="skill-name">React js</p>
+          </div>
         </div>
 
         <div className="skill-other sk-par-con" data-aos="fade">
           <h4>Others :</h4>
-          <img src={gitImg} alt="git" />
-          <img src={githubImg} alt="github" />
-          <img src={vscodeImg} alt="vscode" />
-          <img src={mongodbImg} alt="mongo" />
+          <div>
+            <img src={gitImg} alt="git" />
+            <p className="skill-name">Git</p>
+          </div>
+          <div>
+            <img src={githubImg} alt="github" />
+            <p className="skill-name">Github</p>
+          </div>
+          <div>
+            <img src={vscodeImg} alt="vscode" />
+            <p className="skill-name">VS Code</p>
+          </div>
+          <div>
+            <img src={mongodbImg} alt="mongo" />
+            <p className="skill-name">Mongo DB</p>
+          </div>
         </div>
       </div>
     </section>
