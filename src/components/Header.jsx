@@ -3,26 +3,26 @@ import tgImg from "../asserts/images/social/telegram.svg";
 import ghImg from "../asserts/images/social/github.svg";
 import igImg from "../asserts/images/social/insta.png";
 import liImg from "../asserts/images/social/linkedin.svg";
+import { useEffect } from "react";
 
 function Header() {
-  const nameCharacterElements = document.querySelectorAll(".name-char");
-  function animateName() {
-    let t = 0;
-    nameCharacterElements.forEach((charElement) => {
-      t += 115;
-      setTimeout(() => {
-        charElement.classList.add("name-color");
+  useEffect(() => {
+    const nameCharacterElements = document.querySelectorAll(".name-char");
+    setInterval(() => {
+      let t = 0;
+      nameCharacterElements.forEach((charElement) => {
+        t += 120;
         setTimeout(() => {
-          charElement.classList.remove("name-color");
-        }, 140);
-      }, t);
-    });
-  }
-
-  animateName();
-  setInterval(() => {
-    animateName();
-  }, 1800);
+          // charElement.classList.add("name-color");
+          charElement.style.color = "yellow";
+          setTimeout(() => {
+            // charElement.classList.remove("name-color");
+            charElement.style.color = "white";
+          }, 150);
+        }, t);
+      });
+    }, 2000);
+  }, []);
 
   return (
     <header id="head-section">

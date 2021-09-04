@@ -195,9 +195,9 @@ function Workdone() {
             />
             <h3>Portfolio</h3>
             <p className="work-info">
-              A portfolio web page to show all info about myself like about,
-              places, education, social-profiles, skills, work done, contact,
-              etc. It is the page which is you currently looking at.
+              A React Js based portfolio to show all info about myself like
+              about, places, education, social-profiles, skills, work-done,
+              contact, etc. It is the page which is you currently looking at.
             </p>
             <div className="work-used">
               <img src={htmlImg} alt="" />
