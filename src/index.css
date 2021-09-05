@@ -55,7 +55,7 @@ nav {
   top: 0;
   z-index: 1;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .sr-logo {
@@ -216,7 +216,7 @@ hr {
 
 /*============= SECTION ==============*/
 section {
-  padding: 30px 0;
+  padding: 30px 15px;
 }
 
 .section-heading {
@@ -238,7 +238,7 @@ section {
 .about-info {
   background: black;
   width: 90%;
-  max-width: 70rem;
+  max-width: 1440px;
   margin: auto;
   text-align: left;
   font-size: 17px;
@@ -287,7 +287,7 @@ section {
 }
 
 .skill-container {
-  max-width: 55rem;
+  max-width: 1000px;
   margin: auto;
   text-align: center;
 }
@@ -324,15 +324,15 @@ section {
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1440px;
   align-items: center;
-  width: 95%;
 }
 
 .work-box {
-  width: 27rem;
+  width: 430px;
   border-radius: 8px;
   overflow: hidden;
-  margin: 0.8rem;
+  margin: 12px;
   border: 2px solid var(--color-text-secondary);
   box-shadow: 1px 1px 3px 0px var(--color-text-primary);
   text-align: left;
@@ -433,7 +433,6 @@ section {
 #contact {
   background-color: var(--color-primary);
   color: var(--color-text-primary);
-  padding: 30px 20px;
   position: relative;
 }
 .contact-container {
@@ -443,7 +442,7 @@ section {
   justify-content: center;
   background: #232323;
   background: var(--color-secondary);
-  max-width: 65rem;
+  max-width: 1440px;
 }
 iframe {
   height: 260px;
@@ -501,7 +500,7 @@ footer {
   background-color: var(--color-secondary);
   width: 100%;
   color: var(--color-text-secondary);
-  padding: 24px 0 14px 0;
+  padding: 24px 15px 14px 15px;
 }
 footer .social-profiles {
   margin-top: -10px;
@@ -530,8 +529,7 @@ footer p {
   }
   .about-info {
     font-size: 15px;
-    margin: 0 15px;
-    width: unset;
+    width: 100%;
   }
   .social-logo {
     width: 42px;
@@ -571,6 +569,9 @@ footer p {
 
 /*========= MEDIA QUERY:600px =============*/
 @media (max-width: 600px) {
+  section {
+    padding: 20px 10px;
+  }
   .navbar-headings {
     display: none;
   }
@@ -605,13 +606,9 @@ footer p {
   .skill-container h4 {
     padding-left: 25px;
   }
-
-  .work-done {
-    width: 95%;
-  }
   .work-box {
-    height: unset;
-    width: unset;
+    width: 100%;
+    margin: 10px 0;
   }
   .work-img {
     height: calc(20vw + 6rem);
