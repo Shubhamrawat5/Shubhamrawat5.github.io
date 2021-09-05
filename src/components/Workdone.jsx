@@ -6,6 +6,8 @@ import nodejsImg from "../asserts/images/skill/nodejs3.png";
 import reactjsImg from "../asserts/images/skill/react.png";
 import githubImg from "../asserts/images/skill/github2.png";
 import mongodbImg from "../asserts/images/skill/mongodb.png";
+import firebaseImg from "../asserts/images/skill/firebase.png";
+import medihomeImg from "../asserts/images/medihome.jpg";
 
 function Workdone() {
   return (
@@ -14,6 +16,69 @@ function Workdone() {
         <h2 className="section-heading">&#60; Work Done / &#62;</h2>
       </div>
       <div className="work-done">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/Shubhamrawat5/TeleNews"
+        >
+          <div data-aos="fade-up" className="work-box">
+            <img
+              className="work-img"
+              src="https://user-images.githubusercontent.com/34619485/88335884-a7d4af00-cd51-11ea-8021-75e10a2a53f5.jpg"
+              alt=""
+            />
+            <h3>TeleNews</h3>
+            <p className="work-info">
+              A tool to create telegram bot which will post tech news to your
+              given Telegram channel. It extract news headlines from different
+              tech news websites like ndtv-gadgets, beebom, india-today etc.
+            </p>
+            <div className="work-used">
+              <img src={pythonImg} alt="" />
+            </div>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Shubhamrawat5/TeleNews"
+            >
+              <div className="work-github">
+                <img src={githubImg} alt="" />
+              </div>
+            </a>
+          </div>
+        </a>
+
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://medihome.info/"
+        >
+          <div data-aos="fade-up" className="work-box">
+            <img className="work-img" src={medihomeImg} alt="" />
+            <h3>Medi Home</h3>
+            <p className="work-info">
+              A React based website for a Startup to show available medicines
+              and used Google platform Firebase for authentication, storage and
+              database. Also made admin dashboard for making changes.
+            </p>
+            <div className="work-used">
+              <img src={reactjsImg} alt="" />
+              <img src={firebaseImg} alt="" />
+            </div>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/shubhamrawat5"
+            >
+              <div className="work-github">
+                <img src={githubImg} alt="" />
+              </div>
+            </a>
+          </div>
+        </a>
+
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -42,39 +107,6 @@ function Workdone() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/Shubhamrawat5/Sentimental-Analysis-of-Product-and-Movie-Review-System"
-            >
-              <div className="work-github">
-                <img src={githubImg} alt="" />
-              </div>
-            </a>
-          </div>
-        </a>
-
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/Shubhamrawat5/TeleNews"
-        >
-          <div data-aos="fade-up" className="work-box">
-            <img
-              className="work-img"
-              src="https://user-images.githubusercontent.com/34619485/88335884-a7d4af00-cd51-11ea-8021-75e10a2a53f5.jpg"
-              alt=""
-            />
-            <h3>TeleNews</h3>
-            <p className="work-info">
-              A tool to create telegram bot which will post tech news to your
-              given Telegram channel. It extract news headlines from different
-              tech news websites like ndtv-gadgets, beebom, india-today etc.
-            </p>
-            <div className="work-used">
-              <img src={pythonImg} alt="" />
-            </div>
-
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/Shubhamrawat5/TeleNews"
             >
               <div className="work-github">
                 <img src={githubImg} alt="" />
@@ -346,41 +378,6 @@ function Workdone() {
               <img src={mongodbImg} alt="" />
             </div>
             <a href="htthttps://github.com/Shubhamrawat5/Custom-Link-Maker">
-              <div className="work-github">
-                <img src={githubImg} alt="" />
-              </div>
-            </a>
-          </div>
-        </a>
-
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://shubhamrawat5.github.io/movie-app/"
-        >
-          <div data-aos="fade-up" className="work-box">
-            <img
-              className="work-img"
-              src="https://camo.githubusercontent.com/399fa38568a5c350683b1eae2815e74de7646a6c2953ef3382d064e812dbce23/68747470733a2f2f692e6962622e636f2f766a3532334c732f6d6f7669652e706e67"
-              alt=""
-            />
-            <h3>MOVIE-APP</h3>
-            <p className="work-info">
-              A react and redux based movie app which show different movies and
-              you can add any movie to the favourite section and also search any
-              movie title from search bar.
-            </p>
-            <div className="work-used">
-              <img src={htmlImg} alt="" />
-              <img src={cssImg} alt="" />
-              <img src={jsImg} alt="" />
-              <img src={reactjsImg} alt="" />
-            </div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/Shubhamrawat5/movie-app"
-            >
               <div className="work-github">
                 <img src={githubImg} alt="" />
               </div>
