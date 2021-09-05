@@ -31,6 +31,16 @@ body {
   --color-text-primary: #dee4ea;
   --color-text-secondary: rgb(218 218 232);
   --theme-invert: invert();
+  animation: fade-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
 }
 
 a {
