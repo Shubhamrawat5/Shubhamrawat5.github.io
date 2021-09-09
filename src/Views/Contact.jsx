@@ -42,7 +42,7 @@ function Contact() {
         <h2 className="section-heading">&#60; Contact me / &#62;</h2>
       </div>
       <div className="contact-container">
-        <form data-aos="zoom-in" onSubmit={submitForm}>
+        <form data-aos="fade" onSubmit={submitForm}>
           <div>
             <label htmlFor="name">NAME</label>
             <input
@@ -77,7 +77,7 @@ function Contact() {
         </form>
         <iframe
           title="location"
-          data-aos="zoom-in"
+          data-aos="fade"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.540338058812!2d79.31647641445244!3d30.3924079090069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909d446cba5503d%3A0x3f651e48498fc8cd!2sInstitute%20of%20Technology%2C%20Gopeshwar!5e0!3m2!1sen!2sin!4v1620591692960!5m2!1sen!2sin"
           width="400"
           height="300"

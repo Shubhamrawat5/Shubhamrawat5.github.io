@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Aboutme from "./components/Aboutme";
 import Skills from "./components/Skills";
 import Workdone from "./components/Workdone";
-import Contact from "./Views/Contact";
+import Contact from "./views/Contact";
 import Footer from "./components/Footer";
 
 import { useState } from "react";

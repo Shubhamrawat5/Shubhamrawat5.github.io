@@ -19,7 +19,7 @@ function Nav({ theme, setTheme }) {
   return (
     <nav>
       <div className="sr-logo">
-        <img id="logo" className="invert" src={logo} alt="" />
+        <img id="logo" className="invert" src={logo} alt="logo" />
       </div>
       <div className="navbar-headings">
         <a href="#head-section">
