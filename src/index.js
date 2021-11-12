@@ -6,7 +6,7 @@ import Loader from "./components/Loader";
 //minimum given time it will take to load App component (for showing loading loader everytime)
 const App = lazy(() => {
   return new Promise((resolve) => {
-    setTimeout(() => resolve(import("./App")), 2300);
+    setTimeout(() => resolve(import("./App")), 1000);
   });
 });
 

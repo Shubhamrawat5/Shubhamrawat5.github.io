@@ -9,11 +9,10 @@
 #loader-container span {
   display: block;
   background: #000000b0;
-  width: 100px;
-  height: 5px;
+  width: 80px;
+  height: 7px;
   margin-top: 5px;
   animation: load 2s infinite;
-  border-radius: 5px;
 }
 
 #loader-container span:nth-child(2) {
@@ -26,7 +25,6 @@
 @keyframes load {
   50% {
     width: 5px;
-    margin-right: 95px;
-    opacity: 0.1;
+    opacity: 0.5;
   }
 }
