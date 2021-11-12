@@ -82,6 +82,39 @@ function Workdone() {
         <a
           target="_blank"
           rel="noopener noreferrer"
+          href="https://github.com/Shubhamrawat5/whatsapp-bot"
+        >
+          <div data-aos="fade-up" className="work-box">
+            <img
+              className="work-img"
+              src="https://i.ibb.co/G3Ph5sY/1-Aca-JFd-Mf-Pux-d0-YEl9cprw.png"
+              alt="project-img"
+            />
+            <h3>Whatsapp Bot</h3>
+            <p className="work-info">
+              It has various functions like group management, sticker maker,
+              insta downloader, youtube downloader, cricket scores, voting
+              system and many more
+            </p>
+            <div className="work-used">
+              <img src={nodejsImg} alt="nodejs" />
+            </div>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Shubhamrawat5/whatsapp-bot"
+            >
+              <div className="work-github">
+                <img src={githubImg} alt="github" />
+              </div>
+            </a>
+          </div>
+        </a>
+
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://appleplaylistdownloader.herokuapp.com/"
         >
           <div data-aos="fade-up" className="work-box">
@@ -283,7 +316,7 @@ function Workdone() {
           </div>
         </a>
 
-        <a
+        {/* <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://shubhamrawat5.github.io/TheACE/index.html"
@@ -315,7 +348,7 @@ function Workdone() {
               </div>
             </a>
           </div>
-        </a>
+        </a> */}
 
         <a
           target="_blank"
