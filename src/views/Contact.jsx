@@ -77,12 +77,11 @@ function Contact() {
         </form>
         <iframe
           title="location"
-          data-aos="fade"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.540338058812!2d79.31647641445244!3d30.3924079090069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909d446cba5503d%3A0x3f651e48498fc8cd!2sInstitute%20of%20Technology%2C%20Gopeshwar!5e0!3m2!1sen!2sin!4v1620591692960!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.945397267179!2d78.77044371511762!3d30.15297708184307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909a46c8c2f6857%3A0x9183e1bbd486352c!2sAgency%20Chowk%2C%20Pauri%2C%20Uttarakhand%20246001!5e0!3m2!1sen!2sin!4v1638123172501!5m2!1sen!2sin"
           width="400"
           height="300"
           style={{ border: 0 }}
-          allowFullScreen=""
+          allowfullscreen=""
           loading="lazy"
         ></iframe>
       </div>

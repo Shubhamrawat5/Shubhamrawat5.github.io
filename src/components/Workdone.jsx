@@ -115,6 +115,40 @@ function Workdone() {
         <a
           target="_blank"
           rel="noopener noreferrer"
+          href="https://pvxcommunity.com/"
+        >
+          <div data-aos="fade-up" className="work-box">
+            <img
+              className="work-img"
+              src="https://i.ibb.co/5c11dHX/image.png"
+              alt="project-img"
+            />
+            <h3>PVX website</h3>
+            <p className="work-info">
+              Website for PVX COMMUNITY. PVX is a whatsapp group with 15+ groups
+              and 3000+ members. Website shows all the information like Groups
+              list, Stats, Admins list and Bdays info.
+            </p>
+            <div className="work-used">
+              <img src={reactjsImg} alt="react" />
+              <img src={nodejsImg} alt="node" />
+              <img src={mongodbImg} alt="mongo" />
+            </div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Shubhamrawat5/PVX_webpage"
+            >
+              <div className="work-github">
+                <img src={githubImg} alt="github" />
+              </div>
+            </a>
+          </div>
+        </a>
+
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://appleplaylistdownloader.herokuapp.com/"
         >
           <div data-aos="fade-up" className="work-box">
@@ -203,40 +237,6 @@ function Workdone() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/Shubhamrawat5/news-api"
-            >
-              <div className="work-github">
-                <img src={githubImg} alt="github" />
-              </div>
-            </a>
-          </div>
-        </a>
-
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://pvx.netlify.app/"
-        >
-          <div data-aos="fade-up" className="work-box">
-            <img
-              className="work-img"
-              src="https://i.ibb.co/84PKvDG/pvxxx.png"
-              alt="project-img"
-            />
-            <h3>PVX website</h3>
-            <p className="work-info">
-              Website for PVX COMMUNITY. PVX is a whatsapp group with 15+ groups
-              and 2000+ members. Website shows all the information like Groups
-              list, Shared Gdrive info, Admins list and Bdays info.
-            </p>
-            <div className="work-used">
-              <img src={reactjsImg} alt="react" />
-              <img src={nodejsImg} alt="node" />
-              <img src={mongodbImg} alt="mongo" />
-            </div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/Shubhamrawat5/PVX_webpage"
             >
               <div className="work-github">
                 <img src={githubImg} alt="github" />
