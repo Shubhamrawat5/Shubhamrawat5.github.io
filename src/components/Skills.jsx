@@ -11,6 +11,7 @@ import gitImg from "../asserts/images/skill/git.png";
 import githubImg from "../asserts/images/skill/github2.png";
 import vscodeImg from "../asserts/images/skill/vscode.png";
 import mongodbImg from "../asserts/images/skill/mongodb.png";
+import mysqlImg from "../asserts/images/skill/mysql.png";
 
 function Skills() {
   return (
@@ -74,6 +75,10 @@ function Skills() {
             <img src={vscodeImg} alt="vscode" />
             <p className="skill-name">VS Code</p>
           </div>
+          <div>
+            <img src={mysqlImg} alt="mysql" />
+            <p className="skill-name">MySQL</p>
+          </div>{" "}
           <div>
             <img src={mongodbImg} alt="mongo" />
             <p className="skill-name">Mongo DB</p>
