@@ -9,9 +9,10 @@ import nodejsImg from "../asserts/images/skill/nodejs3.png";
 import reactjsImg from "../asserts/images/skill/react.png";
 import gitImg from "../asserts/images/skill/git.png";
 import githubImg from "../asserts/images/skill/github2.png";
-import vscodeImg from "../asserts/images/skill/vscode.png";
+// import vscodeImg from "../asserts/images/skill/vscode.png";
 import mongodbImg from "../asserts/images/skill/mongodb.png";
 import mysqlImg from "../asserts/images/skill/mysql.png";
+import firebaseImg from "../asserts/images/skill/firebase.png";
 
 function Skills() {
   const languages = [
@@ -31,9 +32,9 @@ function Skills() {
   const others = [
     { name: "Git", img: gitImg },
     { name: "Github", img: githubImg },
-    { name: "VS Code", img: vscodeImg },
     { name: "MySQL", img: mysqlImg },
     { name: "Mongo DB", img: mongodbImg },
+    { name: "Firebase", img: firebaseImg },
   ];
 
   return (
