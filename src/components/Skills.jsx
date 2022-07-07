@@ -14,6 +14,28 @@ import mongodbImg from "../asserts/images/skill/mongodb.png";
 import mysqlImg from "../asserts/images/skill/mysql.png";
 
 function Skills() {
+  const languages = [
+    { name: "C++", img: cppImg },
+    { name: "C Lang", img: cImg },
+    { name: "Python", img: pythonImg },
+  ];
+
+  const webs = [
+    { name: "Html5", img: htmlImg },
+    { name: "Css3", img: cssImg },
+    { name: "Java Script", img: jsImg },
+    { name: "Node js", img: nodejsImg },
+    { name: "React js", img: reactjsImg },
+  ];
+
+  const others = [
+    { name: "Git", img: gitImg },
+    { name: "Github", img: githubImg },
+    { name: "VS Code", img: vscodeImg },
+    { name: "MySQL", img: mysqlImg },
+    { name: "Mongo DB", img: mongodbImg },
+  ];
+
   return (
     <section id="skills">
       <div>
@@ -23,66 +45,33 @@ function Skills() {
       <div className="skill-container">
         <div className="skill-language sk-par-con" data-aos="fade">
           <h4>Language :</h4>
-          <div>
-            <img src={cppImg} alt="c++" />
-            <p className="skill-name">C++</p>
-          </div>
-          <div>
-            <img src={cImg} alt="c" />
-            <p className="skill-name">C Lang</p>
-          </div>
-          <div>
-            <img src={pythonImg} alt="python" />
-            <p className="skill-name">Python</p>
-          </div>
+
+          {languages.map((language) => (
+            <div>
+              <img src={language.img} alt={language.name} />
+              <p className="skill-name">{language.name}</p>
+            </div>
+          ))}
         </div>
 
         <div className="skill-web sk-par-con" data-aos="fade">
           <h4>Web :</h4>
-          <div>
-            <img src={htmlImg} alt="html" />
-            <p className="skill-name">Html5</p>
-          </div>
-          <div>
-            <img src={cssImg} alt="css" />
-            <p className="skill-name">Css3</p>
-          </div>
-          <div>
-            <img src={jsImg} alt="js" />
-            <p className="skill-name">Java Script</p>
-          </div>
-          <div>
-            <img src={nodejsImg} alt="nodejs" />
-            <p className="skill-name">Node js</p>
-          </div>
-          <div>
-            <img src={reactjsImg} alt="reactjs" />
-            <p className="skill-name">React js</p>
-          </div>
+          {webs.map((web) => (
+            <div>
+              <img src={web.img} alt={web.name} />
+              <p className="skill-name">{web.name}</p>
+            </div>
+          ))}
         </div>
 
         <div className="skill-other sk-par-con" data-aos="fade">
           <h4>Others :</h4>
-          <div>
-            <img src={gitImg} alt="git" />
-            <p className="skill-name">Git</p>
-          </div>
-          <div>
-            <img src={githubImg} alt="github" />
-            <p className="skill-name">Github</p>
-          </div>
-          <div>
-            <img src={vscodeImg} alt="vscode" />
-            <p className="skill-name">VS Code</p>
-          </div>
-          <div>
-            <img src={mysqlImg} alt="mysql" />
-            <p className="skill-name">MySQL</p>
-          </div>{" "}
-          <div>
-            <img src={mongodbImg} alt="mongo" />
-            <p className="skill-name">Mongo DB</p>
-          </div>
+          {others.map((other) => (
+            <div>
+              <img src={other.img} alt={other.name} />
+              <p className="skill-name">{other.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
