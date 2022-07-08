@@ -227,6 +227,11 @@ hr {
 /*============= SECTION ==============*/
 section {
   padding: 30px 15px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .section-heading {
@@ -276,8 +281,9 @@ section {
   padding: 20px;
   padding-top: 10px;
 }
-.about-info p {
+.level {
   margin: 0;
+  margin-top: 1px;
   color: #dee4ea;
 }
 .l2 {
@@ -297,6 +303,7 @@ section {
 }
 
 .skill-container {
+  width: 100%;
   max-width: 1000px;
   margin: auto;
   text-align: center;
@@ -448,15 +455,31 @@ section {
 .contact-container {
   display: inline-flex;
   align-items: center;
-  width: 100%;
   justify-content: center;
+  margin: auto;
+  width: 100%;
   background: #232323;
   background: var(--color-secondary);
   max-width: 1440px;
 }
-iframe {
-  height: 260px;
+.iframe {
+  height: 300px;
   width: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 10px 15px;
+}
+.contact-bg {
+  position: absolute;
+  opacity: 0.12;
+  z-index: 0;
+}
+.frame p {
+  text-shadow: 2px 2px black;
 }
 form {
   text-align: start;
@@ -560,14 +583,14 @@ footer p {
   .contact-container {
     flex-direction: column;
   }
-  iframe {
+  .iframe {
     height: 300px;
   }
   form {
     margin-right: unset;
     width: 100%;
   }
-  iframe {
+  .iframe {
     margin-top: 20px;
     width: 100%;
     max-width: 36rem;

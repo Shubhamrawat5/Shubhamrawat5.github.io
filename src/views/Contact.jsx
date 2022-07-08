@@ -1,6 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-
+import bg from "../asserts/8401.jpg";
 function Contact() {
   const [sendBtnMsg, setSendBtnMsg] = useState("Send");
 
@@ -42,6 +42,21 @@ function Contact() {
         <h2 className="section-heading">&#60; Contact me / &#62;</h2>
       </div>
       <div className="contact-container">
+        <div className="iframe">
+          <img src={bg} alt="" className="contact-bg" />
+          <p>
+            Wants to make a website or custom bots (whatsapp, telegram, etc)?
+          </p>
+          <p>Feel free to Contact/Hire</p>
+          <a
+            style={{ textDecoration: "underline" }}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://wa.me/919557666582"
+          >
+            whatsapp
+          </a>
+        </div>
         <form data-aos="fade" onSubmit={submitForm}>
           <div>
             <label htmlFor="name">NAME</label>
@@ -75,15 +90,6 @@ function Contact() {
             {sendBtnMsg}
           </button>
         </form>
-        <iframe
-          title="location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.945397267179!2d78.77044371511762!3d30.15297708184307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909a46c8c2f6857%3A0x9183e1bbd486352c!2sAgency%20Chowk%2C%20Pauri%2C%20Uttarakhand%20246001!5e0!3m2!1sen!2sin!4v1638123172501!5m2!1sen!2sin"
-          width="400"
-          height="300"
-          style={{ border: 0 }}
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
       </div>
     </section>
   );

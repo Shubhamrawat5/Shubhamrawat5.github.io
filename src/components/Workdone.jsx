@@ -9,6 +9,7 @@ import mongodbImg from "../asserts/images/skill/mongodb.png";
 import firebaseImg from "../asserts/images/skill/firebase.png";
 import medihomeImg from "../asserts/images/medihome.jpg";
 
+//TODO: MAKE AN ARRAY
 function Workdone() {
   return (
     <section id="workdone">
