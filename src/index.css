@@ -7,7 +7,7 @@ html {
 }
 
 :root {
-  --color-primary: hsl(0, 0%, 100%);
+  --color-primary: hsl(0deg 0% 97%);
   --color-secondary: #f2f2f1;
   --color-text-primary: #1a0202;
   --color-text-secondary: #155371eb;
@@ -142,8 +142,10 @@ li:hover {
   width: 100%;
   padding: 0 20px;
   /* background-image: url("../images/cool-background\ \(1\).png"); */
-  background-image: url("./asserts/images/bg2.jpg");
+  background-image: url("./asserts/images/bg3.jpg");
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .name {

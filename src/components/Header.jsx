@@ -1,4 +1,4 @@
-import dp from "../asserts/images/dp1.jpg";
+import dp from "../asserts/images/dp2.jpg";
 import tgImg from "../asserts/images/social/telegram.svg";
 import ghImg from "../asserts/images/social/github.svg";
 import igImg from "../asserts/images/social/insta.png";
