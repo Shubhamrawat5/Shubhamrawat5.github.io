@@ -8,6 +8,7 @@ import githubImg from "../asserts/images/skill/github2.png";
 import mongodbImg from "../asserts/images/skill/mongodb.png";
 import firebaseImg from "../asserts/images/skill/firebase.png";
 import medihomeImg from "../asserts/images/medihome.jpg";
+import pvxwebImg from "../asserts/images/pxvwebsite.png";
 
 //TODO: MAKE AN ARRAY
 function Workdone() {
@@ -53,7 +54,7 @@ function Workdone() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://medihome.info/"
+          href="https://medic-home-9aa86.web.app/"
         >
           <div data-aos="fade-up" className="work-box">
             <img className="work-img" src={medihomeImg} alt="project-img" />
@@ -83,7 +84,7 @@ function Workdone() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/Shubhamrawat5/whatsapp-bot"
+          href="https://shubhamrawat5.github.io/whatsapp-bot-md/"
         >
           <div data-aos="fade-up" className="work-box">
             <img
@@ -119,11 +120,7 @@ function Workdone() {
           href="https://pvxcommunity.com/"
         >
           <div data-aos="fade-up" className="work-box">
-            <img
-              className="work-img"
-              src="https://i.ibb.co/5c11dHX/image.png"
-              alt="project-img"
-            />
+            <img className="work-img" src={pvxwebImg} alt="project-img" />
             <h3>PVX website</h3>
             <p className="work-info">
               Website for PVX COMMUNITY. PVX is a whatsapp group with 15+ groups

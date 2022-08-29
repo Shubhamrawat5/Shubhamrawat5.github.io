@@ -25,7 +25,7 @@ function Aboutme() {
           <p className="level l4">"name" : "B R Modern School, Pauri",</p>
           <p className="level l4">"batch" : "2016-2017"</p>
           <p className="level l3">&#125;,</p>
-          <p className="level l3">"btech" : &#123;</p>
+          <p className="level l3">"B.Tech" : &#123;</p>
           <p className="level l4">
             "name" : "Institute of Technology, Gopeshwar",
           </p>
