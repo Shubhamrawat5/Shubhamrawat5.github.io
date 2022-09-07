@@ -477,11 +477,15 @@ section {
 }
 .contact-bg {
   position: absolute;
-  opacity: 0.12;
+  opacity: 0.1;
   z-index: 0;
 }
-.frame p {
-  text-shadow: 2px 2px black;
+.iframe p {
+  text-shadow: 2px 2px #0000001f;
+  z-index: 1;
+}
+.iframe a {
+  z-index: 1;
 }
 form {
   text-align: start;
