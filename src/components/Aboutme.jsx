@@ -36,7 +36,7 @@ function Aboutme() {
             "interest" : ["Video Games", "Movies", "Space", "Traveling"],
           </p>
           <p className="level l2">
-            "other skills" : ["DSA", "Web Scapping", "Bots"]
+            "other skills" : ["DSA", "Web Scraping", "Bots"]
           </p>
           <p className="level l1">&#125;;</p>
         </div>

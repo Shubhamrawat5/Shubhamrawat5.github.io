@@ -1,2 +1,5 @@
 //deploy to github pages
 npm run deploy
+
+//automatically to netlify
+git push
