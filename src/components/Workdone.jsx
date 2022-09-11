@@ -7,7 +7,9 @@ import reactjsImg from "../asserts/images/skill/react.png";
 import githubImg from "../asserts/images/skill/github2.png";
 import mongodbImg from "../asserts/images/skill/mongodb.png";
 import firebaseImg from "../asserts/images/skill/firebase.png";
-import medihomeImg from "../asserts/images/medihome.jpg";
+import medihomeImg from "../asserts/images/projects/medihome.jpg";
+import portfolioImg from "../asserts/images/projects/portfolio.png";
+import newsImg from "../asserts/images/projects/news.png";
 import pvxwebImg from "../asserts/images/pxvwebsite.png";
 
 //TODO: MAKE AN ARRAY
@@ -217,11 +219,7 @@ function Workdone() {
           href="https://news-pvx.herokuapp.com/"
         >
           <div data-aos="fade-up" className="work-box">
-            <img
-              className="work-img"
-              src="https://i.ibb.co/4s6BW2C/news.png"
-              alt="project-img"
-            />
+            <img className="work-img" src={newsImg} alt="project-img" />
             <h3>News-api</h3>
             <p className="work-info">
               A Public news api which extract and give news from popular 10-12
@@ -249,11 +247,7 @@ function Workdone() {
           href="https://shubhamrawat5.github.io/"
         >
           <div data-aos="fade-up" className="work-box">
-            <img
-              className="work-img"
-              src="https://i.ibb.co/YQd4Cjv/portfolio.png"
-              alt="project-img"
-            />
+            <img className="work-img" src={portfolioImg} alt="project-img" />
             <h3>Portfolio</h3>
             <p className="work-info">
               A React Js based portfolio to show all info about myself like

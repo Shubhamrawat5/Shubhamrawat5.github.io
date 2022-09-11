@@ -21,7 +21,7 @@ function Nav({ theme, setTheme }) {
       <div className="sr-logo">
         <img id="logo" className="invert" src={logo} alt="logo" />
       </div>
-      <div className="navbar-headings">
+      <ul className="navbar-headings">
         <a href="#head-section">
           <li>Home</li>
         </a>
@@ -37,7 +37,7 @@ function Nav({ theme, setTheme }) {
         <a href="#contact">
           <li>Contact</li>
         </a>
-      </div>
+      </ul>
       <div
         className="theme-mode-container"
         onClick={() => changeThemeHandler()}
