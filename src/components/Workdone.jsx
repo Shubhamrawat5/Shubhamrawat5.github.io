@@ -149,7 +149,7 @@ function Workdone() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://appleplaylistdownloader.herokuapp.com/"
+          href="https://apple-playlist-downloader-pvx.onrender.com/"
         >
           <div data-aos="fade-up" className="work-box">
             <img
@@ -216,7 +216,7 @@ function Workdone() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://news-pvx.herokuapp.com/"
+          href="https://news-pvx.onrender.com/"
         >
           <div data-aos="fade-up" className="work-box">
             <img className="work-img" src={newsImg} alt="project-img" />
@@ -345,7 +345,7 @@ function Workdone() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://todo-app-shubh.herokuapp.com/"
+          href="https://tasker-4tep.onrender.com/"
         >
           <div data-aos="fade-up" className="work-box">
             <img
@@ -381,7 +381,7 @@ function Workdone() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://linkkmakerr.herokuapp.com/"
+          href="https://link-maker-pvx.onrender.com/"
         >
           <div data-aos="fade-up" className="work-box">
             <img
