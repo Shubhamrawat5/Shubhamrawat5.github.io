@@ -18,16 +18,20 @@ function Aboutme() {
           <p className="level l2">&#125;,</p>
           <p className="level l2">"place" : &#123;</p>
           <p className="level l3">"hometown" : "Pauri, Uttarakhand",</p>
-          <p className="level l3">"currently" : "Chamoli, Uttarakhand" </p>
+          <p className="level l3">"currently" : "Bengalore, Karnataka" </p>
           <p className="level l2">&#125;,</p>
           <p className="level l2">"education" : &#123;</p>
           <p className="level l3">"intermediate" : &#123;</p>
           <p className="level l4">"name" : "B R Modern School, Pauri",</p>
+          <p className="level l4">"board" : "CBSE",</p>
           <p className="level l4">"batch" : "2016-2017"</p>
           <p className="level l3">&#125;,</p>
           <p className="level l3">"B.Tech" : &#123;</p>
           <p className="level l4">
             "name" : "Institute of Technology, Gopeshwar",
+          </p>
+          <p className="level l4">
+            "university" : "Uttarakhand Technical University"
           </p>
           <p className="level l4">"batch" : "2017-2021"</p>
           <p className="level l3">&#125;</p>

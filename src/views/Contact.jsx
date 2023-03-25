@@ -52,7 +52,7 @@ function Contact() {
             style={{ textDecoration: "underline" }}
             target="_blank"
             rel="noopener noreferrer"
-            href="https://wa.me/919557666582"
+            href="https://wa.me/916397867115"
           >
             whatsapp
           </a>
