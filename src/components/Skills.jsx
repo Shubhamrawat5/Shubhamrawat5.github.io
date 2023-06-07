@@ -1,18 +1,19 @@
-import React from "react";
-import cppImg from "../asserts/images/skill/cplusplus.png";
-import cImg from "../asserts/images/skill/clang.png";
-import pythonImg from "../asserts/images/skill/python.png";
-import htmlImg from "../asserts/images/skill/html.png";
-import cssImg from "../asserts/images/skill/css.png";
-import jsImg from "../asserts/images/skill/javascript.png";
-import nodejsImg from "../asserts/images/skill/nodejs3.png";
-import reactjsImg from "../asserts/images/skill/react.png";
-import gitImg from "../asserts/images/skill/git.png";
-import githubImg from "../asserts/images/skill/github2.png";
-// import vscodeImg from "../asserts/images/skill/vscode.png";
-import mongodbImg from "../asserts/images/skill/mongodb.png";
-import mysqlImg from "../asserts/images/skill/mysql.png";
-import firebaseImg from "../asserts/images/skill/firebase.png";
+import {
+  cImg,
+  cppImg,
+  cssImg,
+  firebaseImg,
+  gitImg,
+  githubImg,
+  htmlImg,
+  javascriptImg,
+  mongodbImg,
+  mysqlImg,
+  nodeImg,
+  pythonImg,
+  reactImg,
+  typescriptImg,
+} from "./icons";
 
 function Skills() {
   const languages = [
@@ -24,9 +25,10 @@ function Skills() {
   const webs = [
     { name: "Html5", img: htmlImg },
     { name: "Css3", img: cssImg },
-    { name: "Java Script", img: jsImg },
-    { name: "Node js", img: nodejsImg },
-    { name: "React js", img: reactjsImg },
+    { name: "Java Script", img: javascriptImg },
+    { name: "Node js", img: nodeImg },
+    { name: "React js", img: reactImg },
+    { name: "Typescript", img: typescriptImg },
   ];
 
   const others = [

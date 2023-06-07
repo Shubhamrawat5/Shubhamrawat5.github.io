@@ -1,17 +1,19 @@
-import pythonImg from "../asserts/images/skill/python.png";
-import postgresqlImg from "../asserts/images/skill/postgresql.png";
-import htmlImg from "../asserts/images/skill/html.png";
-import cssImg from "../asserts/images/skill/css.png";
-import jsImg from "../asserts/images/skill/javascript.png";
-import nodejsImg from "../asserts/images/skill/nodejs3.png";
-import reactjsImg from "../asserts/images/skill/react.png";
-import githubImg from "../asserts/images/skill/github2.png";
-import mongodbImg from "../asserts/images/skill/mongodb.png";
 import firebaseImg from "../asserts/images/skill/firebase.png";
 import medihomeImg from "../asserts/images/projects/medihome.jpg";
 import portfolioImg from "../asserts/images/projects/portfolio.png";
 import newsImg from "../asserts/images/projects/news.png";
 import pvxwebImg from "../asserts/images/pxvwebsite.png";
+import {
+  cssImg,
+  githubImg,
+  htmlImg,
+  javascriptImg,
+  mongodbImg,
+  nodeImg,
+  postgresqlImg,
+  pythonImg,
+  reactImg,
+} from "./icons";
 
 function Workdone() {
   const works = [
@@ -32,8 +34,8 @@ function Workdone() {
       // desc: "It has various functions like group management, sticker maker, insta downloader, youtube downloader, cricket scores, voting system and many more.",
       desc: "This project involves the development of a WhatsApp bot that offers various commands such as group management, sticker maker, Instagram YouTube downloader, live cricket scores and much more. Bot has more than 50 commands to offer.",
       tools: [
-        { name: "nodejs", img: nodejsImg },
-      { name: "postgresql", img: postgresqlImg },
+        { name: "nodejs", img: nodeImg },
+        { name: "postgresql", img: postgresqlImg },
       ],
     },
     {
@@ -46,11 +48,23 @@ function Workdone() {
       tools: [
         { name: "html", img: htmlImg },
         { name: "css", img: cssImg },
-        { name: "reactjs", img: reactjsImg },
-        { name: "nodejs", img: nodejsImg },
+        { name: "reactjs", img: reactImg },
+        { name: "nodejs", img: nodeImg },
         { name: "mongodb", img: mongodbImg },
       ],
     },
+    // {
+    //   name: "Yin Yang Photography",
+    //   github: "https://github.com/Shubhamrawat5/",
+    //   website: "https://yinyangphotography.netlify.app/",
+    //   img: "https://i.ibb.co/M1d3Mty/Screenshot-2023-03-25-221322.png",
+    //   desc: "This project is a React-based website for a photography startup. It showcases the photographer's details, such as his biography, portfolio of work, and contact information.",
+    //   tools: [
+    //     { name: "html", img: htmlImg },
+    //     { name: "css", img: cssImg },
+    //     { name: "reactjs", img: reactImg },
+    //   ],
+    // },
     {
       name: "Medi Home",
       github: "https://github.com/Shubhamrawat5/",
@@ -61,7 +75,7 @@ function Workdone() {
       tools: [
         { name: "html", img: htmlImg },
         { name: "css", img: cssImg },
-        { name: "reactjs", img: reactjsImg },
+        { name: "reactjs", img: reactImg },
         { name: "firebase", img: firebaseImg },
       ],
     },
@@ -76,7 +90,7 @@ function Workdone() {
       tools: [
         { name: "html", img: htmlImg },
         { name: "css", img: cssImg },
-        { name: "nodejs", img: nodejsImg },
+        { name: "nodejs", img: nodeImg },
       ],
     },
     {
@@ -86,7 +100,7 @@ function Workdone() {
       img: "https://i.ibb.co/ScGmnj3/download-spotify-to-mp3.png",
       // desc: "A command line tool to download your favourite Spotify playlist in mp3 format. It extracts all songs from your playlist by chromium automation and then download.",
       desc: "This is a command line tool that makes downloading your favourite Spotify playlists easy! It quickly and easily downloads songs in mp3 format, extracting all songs from your chosen playlist and then automatically downloading them one by one.",
-      tools: [{ name: "nodejs", img: nodejsImg }],
+      tools: [{ name: "nodejs", img: nodeImg }],
     },
     {
       name: "News-api",
@@ -95,7 +109,7 @@ function Workdone() {
       img: newsImg,
       // desc: "A Public news api which extract and give news from popular 10-12 news websites. It refresh after every 3 hours (8 times a day). Feel free to use this news-api.",
       desc: "This project provides a public news API that extracts and delivers news headline from 10-12 of the most popular news websites, refreshing 8 times a day every 3 hours. Utilize this news-api to stay up to date on the latest developments across tech.",
-      tools: [{ name: "nodejs", img: nodejsImg }],
+      tools: [{ name: "nodejs", img: nodeImg }],
     },
     {
       name: "Portfolio",
@@ -107,7 +121,7 @@ function Workdone() {
       tools: [
         { name: "html", img: htmlImg },
         { name: "css", img: cssImg },
-        { name: "reactjs", img: reactjsImg },
+        { name: "reactjs", img: reactImg },
       ],
     },
     {
@@ -122,7 +136,7 @@ function Workdone() {
       tools: [
         { name: "html", img: htmlImg },
         { name: "css", img: cssImg },
-        { name: "nodejs", img: nodejsImg },
+        { name: "nodejs", img: nodeImg },
         { name: "python", img: pythonImg },
       ],
     },
@@ -136,7 +150,7 @@ function Workdone() {
       tools: [
         { name: "html", img: htmlImg },
         { name: "css", img: cssImg },
-        { name: "nodejs", img: nodejsImg },
+        { name: "nodejs", img: nodeImg },
         { name: "mongodb", img: mongodbImg },
       ],
     },
@@ -150,7 +164,7 @@ function Workdone() {
       tools: [
         { name: "html", img: htmlImg },
         { name: "css", img: cssImg },
-        { name: "nodejs", img: nodejsImg },
+        { name: "nodejs", img: nodeImg },
         { name: "mongodb", img: mongodbImg },
       ],
     },
@@ -164,7 +178,7 @@ function Workdone() {
       tools: [
         { name: "html", img: htmlImg },
         { name: "css", img: cssImg },
-        { name: "js", img: jsImg },
+        { name: "js", img: javascriptImg },
       ],
     },
     {
@@ -177,7 +191,7 @@ function Workdone() {
       tools: [
         { name: "html", img: htmlImg },
         { name: "css", img: cssImg },
-        { name: "js", img: jsImg },
+        { name: "js", img: javascriptImg },
       ],
     },
     {
@@ -190,7 +204,7 @@ function Workdone() {
       tools: [
         { name: "html", img: htmlImg },
         { name: "css", img: cssImg },
-        { name: "js", img: jsImg },
+        { name: "js", img: javascriptImg },
       ],
     },
   ];
