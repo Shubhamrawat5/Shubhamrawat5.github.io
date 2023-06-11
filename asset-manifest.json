@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.499c0b76.css",
-    "main.js": "/static/js/main.d1034328.js",
+    "main.js": "/static/js/main.dfd5e95d.js",
     "static/media/news.png": "/static/media/news.fa3cf7eee5cfb08f2268.png",
     "static/media/dp2.jpg": "/static/media/dp2.7e7fdd0930317c09c401.jpg",
     "static/media/pxvwebsite.png": "/static/media/pxvwebsite.a8749d86ecaebcc65d18.png",
@@ -10,10 +10,6 @@
     "static/media/medihome.jpg": "/static/media/medihome.fc1176e5dbb2010d8cc5.jpg",
     "static/media/sr-logo.png": "/static/media/sr-logo.88fa1b1b53c82fe7ca32.png",
     "static/media/8401.jpg": "/static/media/8401.f10bc30c212c8af89e86.jpg",
-    "static/media/mysql.png": "/static/media/mysql.0da7cd18c04ff5295e17.png",
-    "static/media/nodejs3.png": "/static/media/nodejs3.6ef25439395a5351f84a.png",
-    "static/media/github2.png": "/static/media/github2.8b7e0a61c45e23f422f3.png",
-    "static/media/postgresql.png": "/static/media/postgresql.c7403f3cd2c4217197f4.png",
     "static/media/insta.png": "/static/media/insta.41f3111a63bb23224c47.png",
     "static/media/github.svg": "/static/media/github.e8c48bc7372dca53c1562b71144c164b.svg",
     "index.html": "/index.html",
@@ -21,10 +17,10 @@
     "static/media/moon.svg": "/static/media/moon.a3325cc33310014680b8fcb9c81226d6.svg",
     "static/media/telegram.svg": "/static/media/telegram.86fe8f608d590ab8724ad6d105296202.svg",
     "main.499c0b76.css.map": "/static/css/main.499c0b76.css.map",
-    "main.d1034328.js.map": "/static/js/main.d1034328.js.map"
+    "main.dfd5e95d.js.map": "/static/js/main.dfd5e95d.js.map"
   },
   "entrypoints": [
     "static/css/main.499c0b76.css",
-    "static/js/main.d1034328.js"
+    "static/js/main.dfd5e95d.js"
   ]
 }
