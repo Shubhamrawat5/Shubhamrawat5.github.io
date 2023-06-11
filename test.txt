@@ -1,5 +1,0 @@
-//automatically to netlify
-git push
-
-//deploy to github pages
-npm run deploy
