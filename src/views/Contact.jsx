@@ -1,6 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import bg from "../asserts/8401.jpg";
+import bg from "../assets/8401.jpg";
 function Contact() {
   const [sendBtnMsg, setSendBtnMsg] = useState("Send");
 

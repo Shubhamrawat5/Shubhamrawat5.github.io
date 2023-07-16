@@ -1,6 +1,6 @@
 import Nav from "./components/Nav";
 import Header from "./components/Header";
-import Aboutme from "./components/Aboutme";
+import About from "./components/About";
 import Skills from "./components/Skills";
 import Workdone from "./components/Workdone";
 import Contact from "./views/Contact";
@@ -15,7 +15,7 @@ function App() {
     <div className={theme}>
       <Nav theme={theme} setTheme={setTheme} />
       <Header />
-      <Aboutme />
+      <About />
       <Skills />
       <Workdone />
       <Contact />

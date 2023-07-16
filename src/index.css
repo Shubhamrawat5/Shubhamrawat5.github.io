@@ -142,7 +142,7 @@ li:hover {
   width: 100%;
   padding: 0 20px;
   /* background-image: url("../images/cool-background\ \(1\).png"); */
-  background-image: url("./asserts/images/bg3.jpg");
+  background-image: url("./assets/images/bg3.jpg");
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -442,10 +442,11 @@ section {
   border-radius: 50%;
   background-color: white;
   transform: rotate(0deg);
+  filter: opacity(0.8);
 }
 .work-github img:hover {
-  transition: 2s;
-  transform: rotate(360deg);
+  transition: 0.5s;
+  transform: rotate(-45deg);
 }
 
 /* --------------------------------- CONTACT -------------------------------- */

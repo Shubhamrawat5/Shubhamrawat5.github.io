@@ -1,8 +1,8 @@
-import dp from "../asserts/images/dp2.jpg";
-import tgImg from "../asserts/images/social/telegram.svg";
-import ghImg from "../asserts/images/social/github.svg";
-import igImg from "../asserts/images/social/insta.png";
-import liImg from "../asserts/images/social/linkedin.svg";
+import dp from "../assets/images/dp2.jpg";
+import tgImg from "../assets/images/social/telegram.svg";
+import ghImg from "../assets/images/social/github.svg";
+import igImg from "../assets/images/social/insta.png";
+import liImg from "../assets/images/social/linkedin.svg";
 import { useEffect } from "react";
 
 function Header() {

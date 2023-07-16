@@ -1,8 +1,8 @@
-import firebaseImg from "../asserts/images/skill/firebase.png";
-import medihomeImg from "../asserts/images/projects/medihome.jpg";
-import portfolioImg from "../asserts/images/projects/portfolio.png";
-import newsImg from "../asserts/images/projects/news.png";
-import pvxwebImg from "../asserts/images/pxvwebsite.png";
+import firebaseImg from "../assets/images/skill/firebase.png";
+import medihomeImg from "../assets/images/projects/medihome.jpg";
+import portfolioImg from "../assets/images/projects/portfolio.png";
+import newsImg from "../assets/images/projects/news.png";
+import pvxwebImg from "../assets/images/pxvwebsite.png";
 import {
   cssImg,
   githubImg,
@@ -13,7 +13,7 @@ import {
   postgresqlImg,
   pythonImg,
   reactImg,
-} from "./icons";
+} from "../utils/icons";
 
 function Workdone() {
   const works = [
@@ -113,8 +113,8 @@ function Workdone() {
     },
     {
       name: "Portfolio",
-      github: "https://github.com/Shubhamrawat5/news-api",
-      website: "https://github.com/Shubhamrawat5/Shubhamrawat5.github.io",
+      github: "https://github.com/Shubhamrawat5/Shubhamrawat5.github.io",
+      website: "https://Shubhamrawat5.github.io",
       img: portfolioImg,
       // desc: "A React Js based portfolio to show all info about myself like about, places, education, social-profiles, skills, work-done, contact, etc. It is the page which is you currently looking at.",
       desc: "This site is a React JS-based portfolio showcasing my personal data and professional background, including information about me, my education, skills, past projects and contact information. It is a one-stop destination for discovering all of the relevant details about me.",

@@ -13,7 +13,7 @@ import {
   pythonImg,
   reactImg,
   typescriptImg,
-} from "./icons";
+} from "../utils/icons";
 
 function Skills() {
   const languages = [

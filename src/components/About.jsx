@@ -1,4 +1,4 @@
-function Aboutme() {
+function About() {
   return (
     <section id="aboutme">
       <div>
@@ -18,7 +18,7 @@ function Aboutme() {
           <p className="level l2">&#125;,</p>
           <p className="level l2">"place" : &#123;</p>
           <p className="level l3">"hometown" : "Pauri, Uttarakhand",</p>
-          <p className="level l3">"currently" : "Bengalore, Karnataka" </p>
+          <p className="level l3">"currently" : "Bangalore, Karnataka" </p>
           <p className="level l2">&#125;,</p>
           <p className="level l2">"education" : &#123;</p>
           <p className="level l3">"intermediate" : &#123;</p>
@@ -49,4 +49,4 @@ function Aboutme() {
   );
 }
 
-export default Aboutme;
+export default About;

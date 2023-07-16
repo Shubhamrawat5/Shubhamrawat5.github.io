@@ -1,4 +1,4 @@
-import "../asserts/css/loader.css";
+import "../assets/css/loader.css";
 
 function Loader() {
   return (

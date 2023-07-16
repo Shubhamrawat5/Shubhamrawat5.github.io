@@ -1,6 +1,6 @@
-import moonImg from "../asserts/images/moon.svg";
-import lightImg from "../asserts/images/sun.png";
-import logo from "../asserts/images/sr-logo.png";
+import moonImg from "../assets/images/moon.svg";
+import lightImg from "../assets/images/sun.png";
+import logo from "../assets/images/sr-logo.png";
 
 function Nav({ theme, setTheme }) {
   function changeThemeHandler() {
