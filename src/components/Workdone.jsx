@@ -144,7 +144,7 @@ function Workdone() {
       name: "Tasker",
       github: "https://github.com/Shubhamrawat5/Tasker",
       website: "https://tasker-4tep.onrender.com/",
-      img: "https://camo.githubusercontent.com/c8e1197da20e9ec9ae4dd9d1d97e97301389511e30ceb883851063ad5fcdee93/68747470733a2f2f692e6962622e636f2f644c6b584339792f7461736b312e706e67",
+      img: "https://camo.githubusercontent.com/0bd9db93a7d8d147ca7bced67488d3886102a2e2f5d8c19a244013d70c5372fd/68747470733a2f2f692e6962622e636f2f644c6b584339792f7461736b312e706e67",
       // desc: "A Todo web app which save all your todos (or messages) by giving a unique username. It save all your data in database, so you can see all your previous saved data anytime.",
       desc: "This is a user-friendly web application that allow users to store all their tasks or reminders under a unique username. Data is safely stored in a database, that allow users with quick and easy access to previously saved information at any time anywhere.",
       tools: [
@@ -158,7 +158,7 @@ function Workdone() {
       name: "Custom Link Maker",
       github: "https://github.com/Shubhamrawat5/Custom-Link-Maker",
       website: "https://link-maker-pvx.onrender.com/",
-      img: "https://camo.githubusercontent.com/d9e50e5fe7c8d9af7dac1e8e9f7a34e64f755c7fb026d3a02bb7aad6b1b089b6/68747470733a2f2f692e6962622e636f2f56576b745a35482f6c696e6b31312e706e67",
+      img: "https://camo.githubusercontent.com/f031e60794d41cbf92dbd7ccae838cabbfb6f9b8c4573dc20d0391f85e41150f/68747470733a2f2f692e6962622e636f2f56576b745a35482f6c696e6b31312e706e67",
       // desc: "A web app to change any url to your custom given url name, which will automatically redirect to original url when opened. It can be helpful to make short urls of bigger url links.",
       desc: "This web application is a link shortener that allow users to create custom, shorter names for any URL. When opened, these new links will automatically redirect to the original URL, making it easier to remember and share longer links. It stores URL info in the database",
       tools: [
@@ -185,7 +185,7 @@ function Workdone() {
       name: "Simon Color Game",
       github: "https://github.com/Shubhamrawat5/simon-color-game",
       website: "https://shubhamrawat5.github.io/simon-color-game/",
-      img: "https://camo.githubusercontent.com/df11d3f8926ba242ab2a9c56bcb63abf768abf890786a8196cd196755de2dbd2/68747470733a2f2f692e6962622e636f2f34544e546b42422f436170747572737373652e706e67",
+      img: "https://camo.githubusercontent.com/60f58df13c011aa86656c79fbeae891947c1e2bdc51d3a46932ca4e8ed1ee797/68747470733a2f2f692e6962622e636f2f34544e546b42422f436170747572737373652e706e67",
       // desc: "A web game in which you have to remember and follow the pattern in which the color buttons are pressed. After every right answer pattern length is increase by 1.",
       desc: "This is a web game that test your memory to the limit. Follow a sequence of colored buttons and remember their pattern. Repeat the pattern to win. With each correct answer, the pattern length will increase by 1, leading you through increasingly difficult levels.",
       tools: [
@@ -198,7 +198,7 @@ function Workdone() {
       name: "Rock Paper Scissors",
       github: "https://github.com/Shubhamrawat5/Rock-Paper-Scissors-Game",
       website: "https://shubhamrawat5.github.io/Rock-Paper-Scissors-Game/",
-      img: "https://camo.githubusercontent.com/ba1140f7dded40968fba12b7359b42961128e8335ed981c0d9e0086b011d2701/68747470733a2f2f692e6962622e636f2f4272534b5468542f7270732d436170747572652e706e67",
+      img: "https://camo.githubusercontent.com/dfed7ef989501bd94b942fcb635ca4d229ae18a7a737cdc75767724d3261cbca/68747470733a2f2f692e6962622e636f2f4272534b5468542f7270732d436170747572652e706e67",
       // desc: "A web game of well known Rock, Paper and Scissors. Rock beat Scissor, Scissor beat Paper, Paper beat Rock. Increase your score by winning against bot. Win +1, Loss -1 (point).",
       desc: " This is a web game of classic Rock, Paper and Scissors. Compete against the computer opponent and increase your score by winning rounds. You'll earn 1 point for each victory and lose 1 point for each defeat. Enjoy the challenge and test your luck.",
       tools: [
