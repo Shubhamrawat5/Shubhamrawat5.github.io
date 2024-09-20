@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.61e4b490.css",
-    "main.js": "/static/js/main.2764d430.js",
+    "main.js": "/static/js/main.9c8132ef.js",
     "static/media/news.png": "/static/media/news.fa3cf7eee5cfb08f2268.png",
     "static/media/dp2.jpg": "/static/media/dp2.7e7fdd0930317c09c401.jpg",
     "static/media/pxvwebsite.png": "/static/media/pxvwebsite.a8749d86ecaebcc65d18.png",
@@ -11,16 +11,16 @@
     "static/media/sr-logo.png": "/static/media/sr-logo.88fa1b1b53c82fe7ca32.png",
     "static/media/8401.jpg": "/static/media/8401.f10bc30c212c8af89e86.jpg",
     "static/media/insta.png": "/static/media/insta.41f3111a63bb23224c47.png",
-    "static/media/github.svg": "/static/media/github.e8c48bc7372dca53c1562b71144c164b.svg",
+    "static/media/github.svg": "/static/media/github.55ca2802304ddd5459e328e31e495a2a.svg",
     "index.html": "/index.html",
-    "static/media/linkedin.svg": "/static/media/linkedin.8f3ee2e4bce13f452203c6f5c705d9d4.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.e7d62931cec3ad39a4c27c3f584d218b.svg",
     "static/media/moon.svg": "/static/media/moon.a3325cc33310014680b8fcb9c81226d6.svg",
     "static/media/telegram.svg": "/static/media/telegram.86fe8f608d590ab8724ad6d105296202.svg",
     "main.61e4b490.css.map": "/static/css/main.61e4b490.css.map",
-    "main.2764d430.js.map": "/static/js/main.2764d430.js.map"
+    "main.9c8132ef.js.map": "/static/js/main.9c8132ef.js.map"
   },
   "entrypoints": [
     "static/css/main.61e4b490.css",
-    "static/js/main.2764d430.js"
+    "static/js/main.9c8132ef.js"
   ]
 }
