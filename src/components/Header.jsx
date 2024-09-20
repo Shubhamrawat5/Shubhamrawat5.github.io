@@ -1,4 +1,4 @@
-import dp from "../assets/images/dp2.jpg";
+import dp from "../assets/images/shubham.jpg";
 import tgImg from "../assets/images/social/telegram.svg";
 import ghImg from "../assets/images/social/github.svg";
 import igImg from "../assets/images/social/insta.png";

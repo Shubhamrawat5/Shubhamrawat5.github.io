@@ -173,10 +173,10 @@ li:hover {
   color: #cbf015;
 }
 #dp {
-  width: 212px;
-  height: 200px;
-  /* border-radius: 50%; */
-  /* box-shadow: 2px 4px 5px 4px rgb(35 35 35); BLACK */
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  /* box-shadow: 2px 4px 5px 4px rgb(35 35 35); //BLACK */
   box-shadow: 0px 0px 4px 1px rgb(255 255 255);
 }
 
@@ -619,8 +619,8 @@ footer p {
     padding: 0 10px;
   }
   #dp {
-    width: 170px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
   }
   .name-char {
     font-size: 27px;
