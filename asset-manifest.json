@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.888c6a9b.css",
-    "main.js": "/static/js/main.f1f4b007.js",
+    "main.js": "/static/js/main.2a067fd1.js",
     "static/media/news.png": "/static/media/news.fa3cf7eee5cfb08f2268.png",
     "static/media/pxvwebsite.png": "/static/media/pxvwebsite.a8749d86ecaebcc65d18.png",
     "static/media/shubham.jpg": "/static/media/shubham.33eae30cb0b9c32f6ec7.jpg",
@@ -17,10 +17,10 @@
     "static/media/moon.svg": "/static/media/moon.a3325cc33310014680b8fcb9c81226d6.svg",
     "static/media/telegram.svg": "/static/media/telegram.86fe8f608d590ab8724ad6d105296202.svg",
     "main.888c6a9b.css.map": "/static/css/main.888c6a9b.css.map",
-    "main.f1f4b007.js.map": "/static/js/main.f1f4b007.js.map"
+    "main.2a067fd1.js.map": "/static/js/main.2a067fd1.js.map"
   },
   "entrypoints": [
     "static/css/main.888c6a9b.css",
-    "static/js/main.f1f4b007.js"
+    "static/js/main.2a067fd1.js"
   ]
 }
