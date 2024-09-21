@@ -15,6 +15,7 @@ import {
   typescriptImg,
   nextjsImg,
   tailwindcssImg,
+  reduxImg,
 } from "../utils/icons";
 
 function Skills() {
@@ -28,11 +29,12 @@ function Skills() {
     { name: "Html5", img: htmlImg, filter: false },
     { name: "Css3", img: cssImg, filter: false },
     { name: "Java Script", img: javascriptImg, filter: false },
-    { name: "Node js", img: nodeImg, filter: false },
-    { name: "React js", img: reactImg, filter: false },
-    { name: "Next js", img: nextjsImg, filter: true },
-    { name: "Tailwind css", img: tailwindcssImg, filter: false },
-    { name: "Typescript", img: typescriptImg, filter: false },
+    { name: "Type Script", img: typescriptImg, filter: false },
+    { name: "React Js", img: reactImg, filter: false },
+    { name: "Node Js", img: nodeImg, filter: false },
+    { name: "Next Js", img: nextjsImg, filter: true },
+    { name: "Tailwind Css", img: tailwindcssImg, filter: false },
+    { name: "Redux", img: reduxImg, filter: false },
   ];
 
   const others = [
