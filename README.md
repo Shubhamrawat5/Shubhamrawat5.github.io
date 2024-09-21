@@ -1,9 +1,5 @@
 # Portfolio
 
-## Automatically deploy to Netlify
+## Automatically deploy to Netlify & Github Pages
 
 `$ git push`
-
-## Deploy to Github pages
-
-`$ npm run deploy`
