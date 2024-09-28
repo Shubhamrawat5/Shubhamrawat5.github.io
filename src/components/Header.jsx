@@ -1,8 +1,8 @@
 import dp from "../assets/images/shubham.jpg";
-import tgImg from "../assets/images/social/telegram.svg";
-import ghImg from "../assets/images/social/github.svg";
-import igImg from "../assets/images/social/insta.png";
-import liImg from "../assets/images/social/linkedin.svg";
+import telegramIcon from "../assets/images/social/telegram.svg";
+import githubIcon from "../assets/images/social/github.svg";
+import instagramIcon from "../assets/images/social/insta.png";
+import linkedinIcon from "../assets/images/social/linkedin.svg";
 import { useEffect } from "react";
 
 function Header() {
@@ -56,28 +56,44 @@ function Header() {
           rel="noopener noreferrer"
           href="https://github.com/Shubhamrawat5"
         >
-          <img className="social-logo right-slogo" src={ghImg} alt="Github" />
+          <img
+            className="social-logo right-slogo"
+            src={githubIcon}
+            alt="Github"
+          />
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://t.me/KryptonPVX"
         >
-          <img className="social-logo left-slogo" src={tgImg} alt="Telegram" />
+          <img
+            className="social-logo left-slogo"
+            src={telegramIcon}
+            alt="Telegram"
+          />
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/shubham-rawat-63958416a"
         >
-          <img className="social-logo right-slogo" src={liImg} alt="Linkedin" />
+          <img
+            className="social-logo right-slogo"
+            src={linkedinIcon}
+            alt="Linkedin"
+          />
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.instagram.com/shubhamraw.exe"
         >
-          <img className="left-slogo social-logo" src={igImg} alt="Instagram" />
+          <img
+            className="left-slogo social-logo"
+            src={instagramIcon}
+            alt="Instagram"
+          />
         </a>
       </div>
     </header>
