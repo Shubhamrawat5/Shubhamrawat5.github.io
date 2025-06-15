@@ -1,51 +1,53 @@
+import { useEffect } from "react";
 import dp from "../assets/images/shubham.jpg";
 import telegramIcon from "../assets/images/social/telegram.svg";
 import githubIcon from "../assets/images/social/github.svg";
 import instagramIcon from "../assets/images/social/insta.png";
 import linkedinIcon from "../assets/images/social/linkedin.svg";
-import { useEffect } from "react";
 
 function Header() {
   useEffect(() => {
     const nameCharacterElements = document.querySelectorAll(".name-char");
-    setInterval(() => {
-      let t = 0;
+
+    const interval = setInterval(() => {
+      let delay = 0;
       nameCharacterElements.forEach((charElement) => {
-        t += 120;
+        delay += 120;
         setTimeout(() => {
-          // charElement.classList.add("name-color");
           charElement.style.color = "yellow";
           setTimeout(() => {
-            // charElement.classList.remove("name-color");
             charElement.style.color = "white";
           }, 150);
-        }, t);
+        }, delay);
       });
     }, 2000);
+
+    return () => clearInterval(interval); // cleanup on unmount
   }, []);
+
+  const firstName = "Shubham ";
+  const lastName = "Rawat";
 
   return (
     <header id="head-section">
-      <img id="dp" src={dp} alt="profile pic" />
+      <img id="dp" src={dp} alt="Shubham Rawat profile" />
       <h1 className="name">
         Hey there!
         <div className="name-im">
           <span className="im">I'm </span>
           <div>
-            <span className="name-char">S</span>
-            <span className="name-char">h</span>
-            <span className="name-char">u</span>
-            <span className="name-char">b</span>
-            <span className="name-char">h</span>
-            <span className="name-char">a</span>
-            <span className="name-char">m </span>
+            {firstName.split("").map((char, i) => (
+              <span key={`fn-${i}`} className="name-char">
+                {char}
+              </span>
+            ))}
           </div>
           <div>
-            <span className="name-char">R</span>
-            <span className="name-char">a</span>
-            <span className="name-char">w</span>
-            <span className="name-char">a</span>
-            <span className="name-char">t</span>
+            {lastName.split("").map((char, i) => (
+              <span key={`ln-${i}`} className="name-char">
+                {char}
+              </span>
+            ))}
           </div>
         </div>
       </h1>
@@ -59,7 +61,7 @@ function Header() {
           <img
             className="social-logo right-slogo"
             src={githubIcon}
-            alt="Github"
+            alt="GitHub Profile"
           />
         </a>
         <a
@@ -70,7 +72,7 @@ function Header() {
           <img
             className="social-logo left-slogo"
             src={telegramIcon}
-            alt="Telegram"
+            alt="Telegram Profile"
           />
         </a>
         <a
@@ -81,7 +83,7 @@ function Header() {
           <img
             className="social-logo right-slogo"
             src={linkedinIcon}
-            alt="Linkedin"
+            alt="LinkedIn Profile"
           />
         </a>
         <a
@@ -90,9 +92,9 @@ function Header() {
           href="https://www.instagram.com/shubhamraw.exe"
         >
           <img
-            className="left-slogo social-logo"
+            className="social-logo left-slogo"
             src={instagramIcon}
-            alt="Instagram"
+            alt="Instagram Profile"
           />
         </a>
       </div>

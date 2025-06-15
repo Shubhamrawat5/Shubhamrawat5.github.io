@@ -9,25 +9,21 @@ const socialLinks = [
     name: "GitHub",
     url: "https://github.com/Shubhamrawat5",
     icon: githubIcon,
-    alt: "Github",
   },
   {
     name: "Telegram",
     url: "https://t.me/KryptonPVX",
     icon: telegramIcon,
-    alt: "Telegram",
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/shubham-rawat-63958416a",
     icon: linkedinIcon,
-    alt: "Linkedin",
   },
   {
     name: "Instagram",
     url: "https://www.instagram.com/shubhamraw.exe",
     icon: instagramIcon,
-    alt: "Instagram",
   },
 ];
 
@@ -35,15 +31,15 @@ const Footer = () => {
   return (
     <footer>
       <div className="social-profiles">
-        {socialLinks.map((link, index) => (
+        {socialLinks.map(({ name, url, icon }, index) => (
           <a
             key={index}
-            href={link.url}
+            href={url}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={link.name}
+            aria-label={name}
           >
-            <img className="social-logo" src={link.icon} alt={link.alt} />
+            <img className="social-logo" src={icon} alt={`${name} Icon`} />
           </a>
         ))}
       </div>

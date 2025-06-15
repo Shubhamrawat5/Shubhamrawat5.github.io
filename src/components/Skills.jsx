@@ -20,30 +20,39 @@ import {
 } from "../utils/icons";
 
 const Skills = () => {
-  const languages = [
-    { name: "C++", img: cppImg, filter: false },
-    { name: "C Lang", img: cImg, filter: false },
-    { name: "Python", img: pythonImg, filter: false },
-  ];
-
-  const webs = [
-    { name: "HTML5", img: htmlImg, filter: false },
-    { name: "CSS3", img: cssImg, filter: false },
-    { name: "Java Script", img: javascriptImg, filter: false },
-    { name: "Type Script", img: typescriptImg, filter: false },
-    { name: "React Js", img: reactImg, filter: false },
-    { name: "Node Js", img: nodeImg, filter: false },
-    { name: "Next Js", img: nextjsImg, filter: true },
-    { name: "Tailwind CSS", img: tailwindcssImg, filter: false },
-    { name: "Redux", img: reduxImg, filter: false },
-  ];
-
-  const others = [
-    { name: "Git", img: gitImg, filter: false },
-    { name: "GitHub", img: githubImg, filter: true },
-    { name: "MySQL", img: mysqlImg, filter: false },
-    { name: "Mongo DB", img: mongodbImg, filter: false },
-    { name: "Firebase", img: firebaseImg, filter: false },
+  const skillSections = [
+    {
+      title: "Language",
+      data: [
+        { name: "C++", img: cppImg },
+        { name: "C Lang", img: cImg },
+        { name: "Python", img: pythonImg },
+      ],
+    },
+    {
+      title: "Web",
+      data: [
+        { name: "HTML5", img: htmlImg },
+        { name: "CSS3", img: cssImg },
+        { name: "Java Script", img: javascriptImg },
+        { name: "Type Script", img: typescriptImg },
+        { name: "React Js", img: reactImg },
+        { name: "Node Js", img: nodeImg },
+        { name: "Next Js", img: nextjsImg, filter: true },
+        { name: "Tailwind CSS", img: tailwindcssImg },
+        { name: "Redux", img: reduxImg },
+      ],
+    },
+    {
+      title: "Others",
+      data: [
+        { name: "Git", img: gitImg },
+        { name: "GitHub", img: githubImg, filter: true },
+        { name: "MySQL", img: mysqlImg },
+        { name: "Mongo DB", img: mongodbImg },
+        { name: "Firebase", img: firebaseImg },
+      ],
+    },
   ];
 
   return (
@@ -53,47 +62,25 @@ const Skills = () => {
       </div>
 
       <div className="skill-container">
-        <div className="skill-language sk-par-con" data-aos="fade">
-          <h4>Language :</h4>
-          {languages.map((language, index) => (
-            <div key={index}>
-              <img
-                src={language.img}
-                alt={language.name}
-                style={{ filter: language.filter ? `invert(1)` : "none" }}
-              />
-              <p className="skill-name">{language.name}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="skill-web sk-par-con" data-aos="fade">
-          <h4>Web :</h4>
-          {webs.map((web, index) => (
-            <div key={index}>
-              <img
-                src={web.img}
-                alt={web.name}
-                style={{ filter: web.filter ? `invert(1)` : "none" }}
-              />
-              <p className="skill-name">{web.name}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="skill-other sk-par-con" data-aos="fade">
-          <h4>Others :</h4>
-          {others.map((other, index) => (
-            <div key={index}>
-              <img
-                src={other.img}
-                alt={other.name}
-                style={{ filter: other.filter ? `invert(1)` : "none" }}
-              />
-              <p className="skill-name">{other.name}</p>
-            </div>
-          ))}
-        </div>
+        {skillSections.map((section, index) => (
+          <div
+            key={index}
+            className={`sk-par-con skill-${section.title.toLowerCase()}`}
+            data-aos="fade"
+          >
+            <h4>{section.title} :</h4>
+            {section.data.map((skill, i) => (
+              <div key={i}>
+                <img
+                  src={skill.img}
+                  alt={skill.name}
+                  style={{ filter: skill.filter ? "invert(1)" : "none" }}
+                />
+                <p className="skill-name">{skill.name}</p>
+              </div>
+            ))}
+          </div>
+        ))}
       </div>
     </section>
   );

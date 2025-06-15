@@ -4,53 +4,41 @@ import lightImg from "../assets/images/sun.png";
 import logo from "../assets/images/sr-logo.png";
 
 const Nav = ({ theme, setTheme }) => {
-  const changeThemeHandler = () => {
-    // Toggle invert class on logo
-    const logoElement = document.querySelector("#logo");
-    if (logoElement) {
-      logoElement.classList.toggle("invert");
+  const toggleTheme = () => {
+    document.querySelector("#logo")?.classList.toggle("invert");
+
+    const themeIcon = document.querySelector(".theme-mode-img");
+    if (themeIcon) {
+      themeIcon.classList.remove("theme-animate");
+      setTimeout(() => themeIcon.classList.add("theme-animate"));
     }
 
-    // Trigger animation on theme mode image
-    const currentThemeMode = document.querySelector(".theme-mode-img");
-    if (currentThemeMode) {
-      currentThemeMode.classList.remove("theme-animate");
-      setTimeout(() => {
-        currentThemeMode.classList.add("theme-animate");
-      });
-    }
-
-    // Toggle theme between light and dark
-    if (theme === "dark") {
-      setTheme("light");
-    } else {
-      setTheme("dark");
-    }
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
+
+  const navLinks = [
+    { name: "Home", href: "#head-section" },
+    { name: "About", href: "#aboutme" },
+    { name: "Skills", href: "#skills" },
+    { name: "Work", href: "#workdone" },
+    { name: "Contact", href: "#contact" },
+  ];
 
   return (
     <nav>
       <div className="sr-logo">
         <img id="logo" className="invert" src={logo} alt="Logo" />
       </div>
+
       <ul className="navbar-headings">
-        <li>
-          <a href="#head-section">Home</a>
-        </li>
-        <li>
-          <a href="#aboutme">About</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#workdone">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+        {navLinks.map((link) => (
+          <li key={link.name}>
+            <a href={link.href}>{link.name}</a>
+          </li>
+        ))}
       </ul>
-      <div className="theme-mode-container" onClick={changeThemeHandler}>
+
+      <div className="theme-mode-container" onClick={toggleTheme}>
         <img
           className="theme-mode-img"
           src={theme === "dark" ? moonImg : lightImg}
