@@ -89,7 +89,7 @@ function Header() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.instagram.com/shubhamraw.exe"
+          href="https://www.instagram.com/shubhamm.rawatt"
         >
           <img
             className="social-logo left-slogo"

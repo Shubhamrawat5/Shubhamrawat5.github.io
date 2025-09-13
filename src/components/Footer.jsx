@@ -22,7 +22,7 @@ const socialLinks = [
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/shubhamraw.exe",
+    url: "https://www.instagram.com/shubhamm.rawatt",
     icon: instagramIcon,
   },
 ];
