@@ -17,6 +17,14 @@ import {
   nextjsImg,
   tailwindcssImg,
   reduxImg,
+  postgresqlImg,
+  awsImg,
+  redisImg,
+  seleniumImg,
+  postmanImg,
+  openapiImg,
+  vitestImg,
+  vscodeImg,
 } from "../utils/icons";
 
 const Skills = () => {
@@ -44,13 +52,26 @@ const Skills = () => {
       ],
     },
     {
+      title: "DataBase",
+      data: [
+        { name: "MySQL", img: mysqlImg },
+        { name: "PostgreSQL", img: postgresqlImg },
+        { name: "Mongo DB", img: mongodbImg },
+        { name: "Redis", img: redisImg },
+      ],
+    },
+    {
       title: "Others",
       data: [
         { name: "Git", img: gitImg },
         { name: "GitHub", img: githubImg, filter: true },
-        { name: "MySQL", img: mysqlImg },
-        { name: "Mongo DB", img: mongodbImg },
+        { name: "AWS", img: awsImg, filter: true },
         { name: "Firebase", img: firebaseImg },
+        { name: "OpenAPI", img: openapiImg },
+        { name: "Vitest", img: vitestImg },
+        { name: "Selenium", img: seleniumImg },
+        { name: "Postman", img: postmanImg },
+        { name: "VS Code", img: vscodeImg },
       ],
     },
   ];
@@ -70,7 +91,7 @@ const Skills = () => {
           >
             <h4>{section.title} :</h4>
             {section.data.map((skill, i) => (
-              <div key={i}>
+              <div key={i} className="skill-item">
                 <img
                   src={skill.img}
                   alt={skill.name}
