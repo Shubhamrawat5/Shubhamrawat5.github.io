@@ -84,22 +84,20 @@ const Skills = () => {
 
       <div className="skill-container">
         {skillSections.map((section, index) => (
-          <div
-            key={index}
-            className={`sk-par-con skill-${section.title.toLowerCase()}`}
-            data-aos="fade"
-          >
+          <div key={index} className="sk-par-con" data-aos="fade">
             <h4>{section.title} :</h4>
-            {section.data.map((skill, i) => (
-              <div key={i} className="skill-item">
-                <img
-                  src={skill.img}
-                  alt={skill.name}
-                  style={{ filter: skill.filter ? "invert(1)" : "none" }}
-                />
-                <p className="skill-name">{skill.name}</p>
-              </div>
-            ))}
+            <div className="skills-content">
+              {section.data.map((skill, i) => (
+                <div key={i} className="skill-item">
+                  <img
+                    src={skill.img}
+                    alt={skill.name}
+                    style={{ filter: skill.filter ? "invert(1)" : "none" }}
+                  />
+                  <p className="skill-name">{skill.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div>
