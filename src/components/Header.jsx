@@ -67,23 +67,23 @@ function Header() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://t.me/KryptonPVX"
-        >
-          <img
-            className="social-logo left-slogo"
-            src={telegramIcon}
-            alt="Telegram Profile"
-          />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
           href="https://www.linkedin.com/in/shubham-rawat-63958416a"
         >
           <img
             className="social-logo right-slogo"
             src={linkedinIcon}
             alt="LinkedIn Profile"
+          />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://t.me/KryptonPVX"
+        >
+          <img
+            className="social-logo left-slogo"
+            src={telegramIcon}
+            alt="Telegram Profile"
           />
         </a>
         <a

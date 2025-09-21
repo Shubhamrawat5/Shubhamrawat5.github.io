@@ -11,14 +11,14 @@ const socialLinks = [
     icon: githubIcon,
   },
   {
-    name: "Telegram",
-    url: "https://t.me/KryptonPVX",
-    icon: telegramIcon,
-  },
-  {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/shubham-rawat-63958416a",
     icon: linkedinIcon,
+  },
+  {
+    name: "Telegram",
+    url: "https://t.me/KryptonPVX",
+    icon: telegramIcon,
   },
   {
     name: "Instagram",
