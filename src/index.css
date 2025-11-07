@@ -387,6 +387,7 @@ section {
   border-radius: 50%;
   background: white;
   filter: opacity(0.8);
+  margin: auto;
 }
 .work-github img:hover {
   transition: 0.5s;
