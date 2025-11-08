@@ -223,7 +223,7 @@ function Workdone() {
               <img
                 src={work.img}
                 alt={work.name}
-                className="w-full h-52 object-cover transition-transform duration-300 hover:scale-105"
+                className="w-full h-50 object-cover transition-transform duration-300 hover:scale-105"
               />
 
               {/* Title */}
