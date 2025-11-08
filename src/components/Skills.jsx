@@ -42,8 +42,8 @@ const Skills = () => {
       data: [
         { name: "HTML5", img: htmlImg },
         { name: "CSS3", img: cssImg },
-        { name: "Java Script", img: javascriptImg },
-        { name: "Type Script", img: typescriptImg },
+        { name: "JavaScript", img: javascriptImg },
+        { name: "TypeScript", img: typescriptImg },
         { name: "React Js", img: reactImg },
         { name: "Node Js", img: nodeImg },
         { name: "Next Js", img: nextjsImg, filter: true },
@@ -52,7 +52,7 @@ const Skills = () => {
       ],
     },
     {
-      title: "DataBase",
+      title: "Database",
       data: [
         { name: "MySQL", img: mysqlImg },
         { name: "PostgreSQL", img: postgresqlImg },
@@ -77,24 +77,36 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills">
-      <div>
-        <h2 className="section-heading">&#60; SKILLS / &#62;</h2>
-      </div>
+    <section
+      id="skills"
+      className="bg-gray-900 text-gray-100 flex flex-col items-center py-12 px-6 min-h-screen"
+    >
+      {/* Section Heading */}
+      <h2 className="text-3xl font-semibold border-b border-gray-600 mb-10">
+        &#60; SKILLS / &#62;
+      </h2>
 
-      <div className="skill-container">
+      {/* Skill Categories */}
+      <div className="max-w-5xl w-full text-center">
         {skillSections.map((section, index) => (
-          <div key={index} className="sk-par-con" data-aos="fade">
-            <h4>{section.title} :</h4>
-            <div className="skills-content">
+          <div key={index} className="mb-7" data-aos="fade">
+            {/* Subheading */}
+            <h4 className="text-left underline text-lg mb-4 text-gray-200">
+              {section.title} :
+            </h4>
+
+            {/* Skills Grid */}
+            <div className="flex flex-wrap justify-start gap-6 sm:gap-8">
               {section.data.map((skill, i) => (
-                <div key={i} className="skill-item">
+                <div key={i} className="flex flex-col items-center text-center">
                   <img
                     src={skill.img}
                     alt={skill.name}
-                    style={{ filter: skill.filter ? "invert(1)" : "none" }}
+                    className={`w-12 h-12 sm:w-14 sm:h-14 mb-2 ${
+                      skill.filter ? "invert" : ""
+                    }`}
                   />
-                  <p className="skill-name">{skill.name}</p>
+                  <p className="text-sm sm:text-base">{skill.name}</p>
                 </div>
               ))}
             </div>

@@ -195,69 +195,74 @@ function Workdone() {
   ];
 
   return (
-    <section id="workdone">
-      <div>
-        <h2 className="section-heading">&#60; Projects / &#62;</h2>
-      </div>
-      <div className="work-done">
-        {works.map((work, index) => (
-          <a
-            key={index}
-            target="_blank"
-            rel="noopener noreferrer"
-            href={work.website}
-          >
-            <div data-aos="fade-up" className="work-box">
-              <img className="work-img" src={work.img} alt="project-img" />
-              <h3>{work.name}</h3>
-              <p className="work-info">{work.desc}</p>
-              <div className="work-used">
-                {work.tools.map((tool, index) => (
-                  <img key={index} src={tool.img} alt={tool.name} />
-                ))}
-              </div>
-              <a target="_blank" rel="noopener noreferrer" href={work.github}>
-                <div className="work-github">
-                  <img src={githubImg} alt="github" />
-                </div>
-              </a>
-            </div>
-          </a>
-        ))}
+    <section
+      id="workdone"
+      className="bg-gray-900 text-gray-100 flex flex-col items-center py-12 px-6 min-h-screen"
+    >
+      {/* Section Heading */}
+      <h2 className="text-3xl font-semibold border-b border-gray-600 mb-10">
+        &#60; PROJECTS / &#62;
+      </h2>
 
-        {/* <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://shubhamrawat5.github.io/TheACE/index.html"
-        >
-          <div data-aos="fade-up" className="work-box">
-            <img
-              className="work-img"
-              src="https://i.ibb.co/yPS1f8N/ace.png"
-              alt="project-img"
-            />
-            <h3>TheACE webpage</h3>
-            <p className="work-info">
-              A web page of TheACE. TheACE is a E-Sports organization formed by
-              4 core members and currently with 30+ members. Page show info
-              about clan, members, photos and contact details.
-            </p>
-            <div className="work-used">
-              <img src={htmlImg} alt="html" />
-              <img src={cssImg} alt="css" />
-              <img src={jsImg} alt="js" />
-            </div>
+      {/* Project Cards */}
+      <div className="flex flex-wrap justify-center gap-8 max-w-6xl w-full">
+        {works.map((work, index) => (
+          <div
+            key={index}
+            className="relative bg-gray-800 border border-gray-700 rounded-lg shadow-md 
+      overflow-hidden hover:border-blue-500 hover:shadow-blue-500/20 transition-all duration-300 
+      w-full sm:w-80 md:w-90"
+          >
+            {/* Image */}
             <a
+              href={work.website}
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/Shubhamrawat5/TheACE"
+              className="block overflow-hidden"
             >
-              <div className="work-github">
-                <img src={githubImg} alt="github" />
-              </div>
+              <img
+                src={work.img}
+                alt={work.name}
+                className="w-full h-52 object-cover transition-transform duration-300 hover:scale-105"
+              />
+
+              {/* Title */}
+              <h3 className="text-lg font-semibold bg-blue-500 text-white px-3 py-1 inline-block rounded-br-md mt-2 ml-2">
+                {work.name}
+              </h3>
+
+              {/* Description */}
+              <p className="text-sm text-gray-300 px-4 py-3">{work.desc}</p>
+            </a>
+
+            {/* Tools */}
+            <div className="flex flex-wrap items-center gap-2 px-4 pb-4">
+              {work.tools.map((tool, i) => (
+                <img
+                  key={i}
+                  src={tool.img}
+                  alt={tool.name}
+                  className="w-9 h-9"
+                />
+              ))}
+            </div>
+
+            {/* GitHub Ribbon */}
+            <a
+              href={work.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-0 -right-18 w-48 h-12 bg-blue-500 rotate-45 
+  flex items-center justify-center"
+            >
+              <img
+                src={githubImg}
+                alt="GitHub"
+                className="w-10 h-10 rounded-full bg-white opacity-80 transition-transform duration-300 hover:-rotate-45"
+              />
             </a>
           </div>
-        </a> */}
+        ))}
       </div>
     </section>
   );

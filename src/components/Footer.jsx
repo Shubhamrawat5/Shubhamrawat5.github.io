@@ -29,8 +29,9 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="social-profiles">
+    <footer className="w-full bg-gray-900 text-gray-400 py-6 px-4 text-center">
+      {/* Social Links */}
+      <div className="flex justify-center flex-wrap gap-3 mb-3">
         {socialLinks.map(({ name, url, icon }, index) => (
           <a
             key={index}
@@ -38,12 +39,18 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={name}
+            className="inline-block hover:scale-110 transition-transform duration-200"
           >
-            <img className="social-logo" src={icon} alt={`${name} Icon`} />
+            <img src={icon} alt={`${name} icon`} className="w-8 h-8" />
           </a>
         ))}
       </div>
-      <p>CODED WITH ❤️ BY SHUBHAM</p>
+
+      {/* Footer Text */}
+      <p className="text-sm sm:text-base font-medium tracking-wide text-gray-400">
+        CODED WITH <span className="text-red-500">❤️</span> BY{" "}
+        <span className="text-gray-200">SHUBHAM</span>
+      </p>
     </footer>
   );
 };

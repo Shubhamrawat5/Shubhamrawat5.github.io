@@ -2,94 +2,85 @@ import React from "react";
 
 const About = () => {
   const data = {
-    name: {
-      fname: "Shubham",
-      sname: "Rawat",
-    },
-    place: {
+    name: { fname: "Shubham", sname: "Rawat" },
+    location: {
       hometown: "Pauri, Uttarakhand",
-      currently: "Bangalore, Karnataka",
+      current: "Bangalore, Karnataka",
     },
     education: {
-      intermediate: {
-        name: "B R Modern School, Pauri",
-        board: "CBSE",
-        batch: "2016-2017",
-      },
-      "B.Tech": {
-        name: "Institute of Technology, Gopeshwar",
-        university: "Uttarakhand Technical University",
-        batch: "2017-2021",
-      },
+      degree: "B.Tech",
+      branch: "Computer Science Engineering",
+      university: "Uttarakhand Technical University",
+      batch: "2017-2021",
     },
     interests: ["Video Games", "Movies", "Space", "Traveling"],
-    otherSkills: ["DSA", "Web Scraping", "Bots"],
+    otherSkills: ["DSA", "OOPs", "CI/CD", "Web Scraping", "Automation Bots"],
   };
 
   return (
-    <section id="aboutme">
-      <div>
-        <h2 className="section-heading">&#60; ABOUT ME / &#62;</h2>
-      </div>
-      <div className="about-info" data-aos="fade">
-        <div className="about-me-header">
-          <div></div>
-          <div></div>
-          <div></div>
+    <section
+      id="aboutme"
+      className="flex flex-col items-center justify-center min-h-screen bg-gray-900 py-12 px-6"
+    >
+      {/* Section Heading */}
+      <h2 className="text-3xl font-semibold text-gray-100 border-b border-gray-600 mb-8">
+        &#60; ABOUT ME / &#62;
+      </h2>
+
+      {/* About Box */}
+      <div
+        className="w-full max-w-5xl bg-gray-800 text-gray-100 font-mono text-sm sm:text-base rounded-lg shadow-md overflow-hidden"
+        data-aos="fade"
+      >
+        {/* Header Dots */}
+        <div className="bg-gray-700 px-4 py-2 flex items-center gap-2">
+          <div className="w-3 h-3 rounded-full bg-red-500" />
+          <div className="w-3 h-3 rounded-full bg-green-500" />
+          <div className="w-3 h-3 rounded-full bg-yellow-400" />
         </div>
-        <div className="about-me">
-          <p className="level l1">let me = &#123;</p>
-          <p className="level l2">"name" : &#123;</p>
-          <p className="level l3">"fname" : "{data.name.fname}",</p>
-          <p className="level l3">"sname" : "{data.name.sname}"</p>
-          <p className="level l2">&#125;,</p>
-          <p className="level l2">"place" : &#123;</p>
-          <p className="level l3">"hometown" : "{data.place.hometown}",</p>
-          <p className="level l3">"currently" : "{data.place.currently}"</p>
-          <p className="level l2">&#125;,</p>
-          <p className="level l2">"education" : &#123;</p>
-          <p className="level l3">"intermediate" : &#123;</p>
-          <p className="level l4">
-            "name" : "{data.education.intermediate.name}",
-          </p>
-          <p className="level l4">
-            "board" : "{data.education.intermediate.board}",
-          </p>
-          <p className="level l4">
-            "batch" : "{data.education.intermediate.batch}"
-          </p>
-          <p className="level l3">&#125;,</p>
-          <p className="level l3">"B.Tech" : &#123;</p>
-          <p className="level l4">
-            "name" : "{data.education["B.Tech"].name}",
-          </p>
-          <p className="level l4">
-            "university" : "{data.education["B.Tech"].university}",
-          </p>
-          <p className="level l4">
-            "batch" : "{data.education["B.Tech"].batch}"
-          </p>
-          <p className="level l3">&#125;</p>
-          <p className="level l2">&#125;,</p>
-          <p className="level l2">
-            "interest" : &#91;
-            {data.interests.map((interest, index) => (
-              <span key={index}>
-                "{interest}"{index < data.interests.length - 1 ? ", " : ""}
+
+        {/* Body */}
+        <div className="py-4 px-6 leading-relaxed overflow-x-auto">
+          <p>let me = &#123;</p>
+
+          <p className="ml-5">"name" : &#123;</p>
+          <p className="ml-10">"fname" : "{data.name.fname}",</p>
+          <p className="ml-10">"sname" : "{data.name.sname}"</p>
+          <p className="ml-5">&#125;,</p>
+
+          <p className="ml-5">"location" : &#123;</p>
+          <p className="ml-10">"current" : "{data.location.current}"</p>
+          <p className="ml-10">"hometown" : "{data.location.hometown}",</p>
+          <p className="ml-5">&#125;,</p>
+
+          <p className="ml-5">"education" : &#123;</p>
+          <p className="ml-10">"degree" : "{data.education.degree}",</p>
+          <p className="ml-10">"branch" : "{data.education.branch}",</p>
+          <p className="ml-10">"university" : "{data.education.university}",</p>
+          <p className="ml-10">"batch" : "{data.education.batch}"</p>
+          <p className="ml-5">&#125;,</p>
+
+          <p className="ml-5">
+            "interest" : [
+            {data.interests.map((interest, i) => (
+              <span key={i}>
+                "{interest}"{i < data.interests.length - 1 ? ", " : ""}
               </span>
             ))}
-            &#93;,
+            ],
           </p>
-          <p className="level l2">
-            "other skills" : &#91;
-            {data.otherSkills.map((skill, index) => (
-              <span key={index}>
-                "{skill}"{index < data.otherSkills.length - 1 ? ", " : ""}
+
+          <p className="ml-5">
+            "other skills" : [
+            {data.otherSkills.map((skill, i) => (
+              <span key={i}>
+                "{skill}"{i < data.otherSkills.length - 1 ? ", " : ""}
               </span>
             ))}
-            &#93;
+            ]
           </p>
-          <p className="level l1">&#125;;</p>
+
+          <p>&#125;;</p>
         </div>
       </div>
     </section>
