@@ -11,10 +11,20 @@ import {
   reactImg,
   firebaseImg,
 } from "../utils/icons";
+import telenewsImg from "../assets/images/projects/telenews.png";
+import whatsappImg from "../assets/images/projects/whatsapp.png";
+import appleImg from "../assets/images/projects/apple.png";
+import spotifyImg from "../assets/images/projects/spotify.png";
+import sentimentalImg from "../assets/images/projects/sentimental.png";
+import taskerImg from "../assets/images/projects/tasker.png";
+import linkImg from "../assets/images/projects/link.png";
+import frontendImg from "../assets/images/projects/frontend.png";
+import simonImg from "../assets/images/projects/simon.png";
+import rockImg from "../assets/images/projects/rock.png";
 import medihomeImg from "../assets/images/projects/medihome.jpg";
 import portfolioImg from "../assets/images/projects/portfolio.png";
 import newsImg from "../assets/images/projects/news.png";
-import pvxwebImg from "../assets/images/pxvwebsite.png";
+import pvxwebImg from "../assets/images/projects/pvxwebsite.png";
 
 function Workdone() {
   const works = [
@@ -22,7 +32,7 @@ function Workdone() {
       name: "TeleNews",
       github: "https://github.com/Shubhamrawat5/TeleNews",
       website: "https://github.com/Shubhamrawat5/TeleNews",
-      img: "https://i.ibb.co/kkJyt9b/image.png",
+      img: telenewsImg,
       desc: "This project focuses on creating a Telegram bot that will automatically post tech news to your Telegram channel. It gathers headlines from popular news sources such as NDTV-Gadgets, Beebom, and inshorts, providing you with the latest info in the technology world.",
       tools: [{ name: "Python", img: pythonImg }],
     },
@@ -30,7 +40,7 @@ function Workdone() {
       name: "Whatsapp Bot",
       github: "https://github.com/Shubhamrawat5/whatsapp-bot-md",
       website: "https://shubhamrawat5.github.io/whatsapp-bot-md/",
-      img: "https://i.ibb.co/G3Ph5sY/1-Aca-JFd-Mf-Pux-d0-YEl9cprw.png",
+      img: whatsappImg,
       desc: "This project involves the development of a WhatsApp bot that offers various commands such as group management, sticker maker, Instagram YouTube downloader, live cricket scores and much more. Bot has more than 50 commands to offer.",
       tools: [
         { name: "Node.js", img: nodeImg },
@@ -69,7 +79,7 @@ function Workdone() {
       github:
         "https://github.com/Shubhamrawat5/apple-playlist-downloader-webapp",
       website: "https://apple-playlist-downloader-pvx.onrender.com/",
-      img: "https://i.ibb.co/TL9gn5z/apple2131.png",
+      img: appleImg,
       desc: "This web app provides an easy way to download Apple Music playlists in MP3 format. With one click, you can extract all songs from your playlist and view them in a single list. Download all your favorite music faster and easier than ever before.",
       tools: [
         { name: "HTML", img: htmlImg },
@@ -81,7 +91,7 @@ function Workdone() {
       name: "Spotify Playlist Downloader",
       github: "https://github.com/Shubhamrawat5/spotify-playlist-downloader",
       website: "https://github.com/Shubhamrawat5/spotify-playlist-downloader",
-      img: "https://i.ibb.co/ScGmnj3/download-spotify-to-mp3.png",
+      img: spotifyImg,
       desc: "This is a command line tool that makes downloading your favourite Spotify playlists easy! It quickly and easily downloads songs in mp3 format, extracting all songs from your chosen playlist and then automatically downloading them one by one.",
       tools: [{ name: "Node.js", img: nodeImg }],
     },
@@ -111,7 +121,7 @@ function Workdone() {
         "https://github.com/Shubhamrawat5/Sentimental-Analysis-of-Product-and-Movie-Review-System",
       website:
         "https://github.com/Shubhamrawat5/Sentimental-Analysis-of-Product-and-Movie-Review-System",
-      img: "https://i.ibb.co/CJDQhK8/3.png",
+      img: sentimentalImg,
       desc: "This project involves the development of a Sentiment Analysis System for Product Reviews. The system will use ML to detect positivity or negativity from customer reviews of Amazon products. My work includes converting the system into an interactive web application.",
       tools: [
         { name: "HTML", img: htmlImg },
@@ -124,7 +134,7 @@ function Workdone() {
       name: "Tasker",
       github: "https://github.com/Shubhamrawat5/Tasker",
       website: "https://tasker-4tep.onrender.com/",
-      img: "https://i.ibb.co/x8YHdHC3/image.png",
+      img: taskerImg,
       desc: "This is a user-friendly web application that allow users to store all their tasks or reminders under a unique username. Data is safely stored in a database, that allow users with quick and easy access to previously saved information at any time anywhere.",
       tools: [
         { name: "HTML", img: htmlImg },
@@ -137,7 +147,7 @@ function Workdone() {
       name: "Custom Link Maker",
       github: "https://github.com/Shubhamrawat5/Custom-Link-Maker",
       website: "https://link-maker-pvx.onrender.com/",
-      img: "https://i.ibb.co/gMrCRtQX/image.png",
+      img: linkImg,
       desc: "This web application is a link shortener that allow users to create custom, shorter names for any URL. When opened, these new links will automatically redirect to the original URL, making it easier to remember and share longer links. It stores URL info in the database",
       tools: [
         { name: "HTML", img: htmlImg },
@@ -150,7 +160,7 @@ function Workdone() {
       name: "Frontend Mentor",
       github: "https://github.com/Shubhamrawat5/Frontend-Mentor",
       website: "https://shubhamrawat5.github.io/Frontend-Mentor/",
-      img: "https://i.ibb.co/jv5dk68/frontend.png",
+      img: frontendImg,
       desc: "This is a webpage having a range of Frontend-mentor challenges that I've completed, using HTML, CSS and JavaScript. These challenges have helped me in sharpen my coding skills and developing my knowledge of frontend web development.",
       tools: [
         { name: "HTML", img: htmlImg },
@@ -162,7 +172,7 @@ function Workdone() {
       name: "Simon Color Game",
       github: "https://github.com/Shubhamrawat5/simon-color-game",
       website: "https://shubhamrawat5.github.io/simon-color-game/",
-      img: "https://i.ibb.co/m5bQLdgs/Screenshot-2025-11-08-002137.png",
+      img: simonImg,
       desc: "This is a web game that test your memory to the limit. Follow a sequence of colored buttons and remember their pattern. Repeat the pattern to win. With each correct answer, the pattern length will increase by 1, leading you through increasingly difficult levels.",
       tools: [
         { name: "HTML", img: htmlImg },
@@ -174,7 +184,7 @@ function Workdone() {
       name: "Rock Paper Scissors",
       github: "https://github.com/Shubhamrawat5/Rock-Paper-Scissors-Game",
       website: "https://shubhamrawat5.github.io/Rock-Paper-Scissors-Game/",
-      img: "https://i.ibb.co/cc62H23V/Screenshot-2025-11-08-002435.png",
+      img: rockImg,
       desc: "This is a web game of classic Rock, Paper and Scissors. Compete against the computer opponent and increase your score by winning rounds. You'll earn 1 point for each victory and lose 1 point for each defeat. Enjoy the challenge and test your luck.",
       tools: [
         { name: "HTML", img: htmlImg },
