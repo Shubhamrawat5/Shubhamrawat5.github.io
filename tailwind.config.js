@@ -4,7 +4,6 @@ module.exports = {
       fontFamily: {
         heading: ["Poppins", "sans-serif"],
         body: ["Inter", "sans-serif"],
-        display: ["Rock Salt", "cursive"],
       },
     },
   },

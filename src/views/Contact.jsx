@@ -68,7 +68,7 @@ function Contact() {
             whatsapp
           </a>
         </div>
-        <form data-aos="fade" onSubmit={submitForm}>
+        <form onSubmit={submitForm}>
           <div>
             <label htmlFor="form_name">NAME</label>
             <input

@@ -89,7 +89,7 @@ const Skills = () => {
       {/* Skill Categories */}
       <div className="max-w-5xl w-full text-center">
         {skillSections.map((section, index) => (
-          <div key={index} className="mb-7" data-aos="fade">
+          <div key={index} className="mb-7">
             {/* Subheading */}
             <h4 className="text-left underline text-lg mb-4 text-gray-200">
               {section.title} :

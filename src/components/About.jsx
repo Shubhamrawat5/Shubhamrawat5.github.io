@@ -28,10 +28,7 @@ const About = () => {
       </h2>
 
       {/* About Box */}
-      <div
-        className="w-full max-w-5xl bg-gray-800 text-gray-100 font-mono text-sm sm:text-base rounded-lg shadow-md overflow-hidden"
-        data-aos="fade"
-      >
+      <div className="w-full max-w-5xl bg-gray-800 text-gray-100 font-mono text-sm sm:text-base rounded-lg shadow-md overflow-hidden">
         {/* Header Dots */}
         <div className="bg-gray-700 px-4 py-2 flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-red-500" />
