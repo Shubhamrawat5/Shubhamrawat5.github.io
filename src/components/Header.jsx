@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React from "react";
 import dp from "../assets/images/shubham.jpg";
 import telegramIcon from "../assets/images/social/telegram.svg";
 import githubIcon from "../assets/images/social/github.svg";
@@ -6,26 +6,6 @@ import instagramIcon from "../assets/images/social/insta.png";
 import linkedinIcon from "../assets/images/social/linkedin.svg";
 
 function Header() {
-  useEffect(() => {
-    const nameCharacterElements = document.querySelectorAll(".name-char");
-    const interval = setInterval(() => {
-      let delay = 0;
-      nameCharacterElements.forEach((charElement) => {
-        delay += 120;
-        setTimeout(() => {
-          charElement.style.color = "#cbf015";
-          setTimeout(() => {
-            charElement.style.color = "#ffffff";
-          }, 150);
-        }, delay);
-      });
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const firstName = "Shubham ";
-  const lastName = "Rawat";
-
   const socials = [
     {
       name: "GitHub",
@@ -48,55 +28,58 @@ function Header() {
   return (
     <header
       id="head-section"
-      className="relative flex flex-col items-center justify-center min-h-screen px-6 
-      bg-gray-900 text-center"
+      className="relative flex flex-col items-center justify-center min-h-screen w-full bg-gray-900 text-center overflow-hidden px-6 py-10"
     >
       {/* Profile Picture */}
-      <img
-        src={dp}
-        alt="Shubham Rawat"
-        className="w-56 sm:w-44 rounded-full object-cover shadow-lg ring-2 ring-white"
-      />
+      <div className="relative mb-6 mt-12 sm:mt-10">
+        <img
+          src={dp}
+          alt="Shubham Rawat"
+          className="w-44 sm:w-40 rounded-full object-cover shadow-lg ring-2 ring-white"
+        />
+      </div>
 
-      {/* Name */}
-      <h1 className="text-gray-100 text-4xl sm:text-3xl mt-6 font-poppins">
-        Hey there!
-        <div className="font-['Rock_Salt',cursive] mt-1">
-          <span className="block sm:inline">I'm </span>
-          <div className="inline-block mx-2">
-            {firstName.split("").map((char, i) => (
-              <span
-                key={i}
-                className="name-char text-3xl sm:text-2xl text-gray-100"
-              >
-                {char}
-              </span>
-            ))}
-          </div>
-          <div className="inline-block mx-2">
-            {lastName.split("").map((char, i) => (
-              <span
-                key={i}
-                className="name-char text-3xl sm:text-2xl text-gray-100"
-              >
-                {char}
-              </span>
-            ))}
-          </div>
-        </div>
-      </h1>
+      {/* Name & Role */}
+      <div className="text-gray-100 max-w-xl w-full">
+        <h1 className="text-4xl sm:text-3xl font-poppins font-semibold leading-tight">
+          Hi, I'm <span className="text-blue-400">Shubham Rawat</span>
+        </h1>
+
+        {/* Subtitle (wraps gracefully on smaller screens) */}
+        <h2 className="text-lg sm:text-base text-gray-300 mt-2 font-light break-words">
+          Full Stack Developer | Open Source Contributor | Tech Enthusiast
+        </h2>
+
+        <p className="mt-4 text-gray-400 text-base sm:text-sm leading-relaxed mx-auto max-w-md">
+          Passionate about building scalable web apps and automation tools that
+          solve real-world problems. I love working with modern web technologies
+          and exploring new ideas in the tech space.
+        </p>
+      </div>
 
       {/* Social Icons */}
-      <div className="absolute bottom-4 flex justify-center flex-wrap gap-3">
-        {socials.map(({ href, icon }, i) => (
-          <a key={i} href={href} target="_blank" rel="noopener noreferrer">
+      <div className="mt-8 flex justify-center flex-wrap gap-5 sm:gap-4">
+        {socials.map(({ name, href, icon }) => (
+          <a
+            key={name}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={name}
+            className="transform hover:scale-110 transition-transform duration-200"
+          >
             <img
               src={icon}
-              alt="Social icon"
-              className="w-10 h-10 m-1 hover:scale-110 transition-transform duration-200"
+              alt={`${name} icon`}
+              className="w-10 h-10 sm:w-9 sm:h-9 opacity-90 hover:opacity-100"
             />
           </a>
         ))}
+      </div>
+
+      {/* Scroll Indicator — hidden on small screens */}
+      <div className="absolute bottom-4 text-gray-500 text-xs tracking-widest uppercase hidden sm:block">
+        &lt; Scroll Down /&gt;
       </div>
     </header>
   );
