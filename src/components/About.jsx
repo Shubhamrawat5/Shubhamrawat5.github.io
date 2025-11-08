@@ -23,7 +23,7 @@ const About = () => {
       className="flex flex-col items-center justify-center min-h-screen bg-gray-900 py-12 px-6"
     >
       {/* Section Heading */}
-      <h2 className="text-3xl font-semibold text-gray-100 border-b border-gray-600 mb-8">
+      <h2 className="text-3xl font-semibold text-gray-100 border-b-2 border-gray-100 mb-10">
         &#60; ABOUT ME / &#62;
       </h2>
 
@@ -38,7 +38,7 @@ const About = () => {
 
         {/* Body */}
         <div className="py-4 px-6 leading-relaxed overflow-x-auto">
-          <p>let me = &#123;</p>
+          <p>const me = &#123;</p>
 
           <p className="ml-5">"name" : &#123;</p>
           <p className="ml-10">"fname" : "{data.name.fname}",</p>

@@ -2,7 +2,7 @@ import React from "react";
 import dp from "../assets/images/shubham.jpg";
 import telegramIcon from "../assets/images/social/telegram.svg";
 import githubIcon from "../assets/images/social/github.svg";
-import instagramIcon from "../assets/images/social/insta.png";
+import instagramIcon from "../assets/images/social/insta.svg";
 import linkedinIcon from "../assets/images/social/linkedin.svg";
 
 function Header() {

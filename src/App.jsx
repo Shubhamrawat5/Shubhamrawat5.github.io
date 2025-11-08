@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Workdone from "./components/Workdone";
-import Contact from "./views/Contact";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 import { useState } from "react";
@@ -18,7 +18,7 @@ function App() {
       <About />
       <Skills />
       <Workdone />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </div>
   );

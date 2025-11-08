@@ -200,7 +200,7 @@ function Workdone() {
       className="bg-gray-900 text-gray-100 flex flex-col items-center py-12 px-6 min-h-screen"
     >
       {/* Section Heading */}
-      <h2 className="text-3xl font-semibold border-b border-gray-600 mb-10">
+      <h2 className="text-3xl font-semibold border-b-2 border-gray-100 mb-10">
         &#60; PROJECTS / &#62;
       </h2>
 
